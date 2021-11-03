@@ -1,0 +1,19 @@
+{
+  "name": "tibi-lp",
+  "version": "1.0.0",
+  "description": "Tibi landing page client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gretaivan/tibi-lp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gretaivan/tibi-lp/issues"
+  },
+  "homepage": "https://github.com/gretaivan/tibi-lp#readme"
+}
