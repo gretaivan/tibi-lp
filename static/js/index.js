@@ -38,3 +38,23 @@ const privateRoutes = [];
 //         renderLoginForm();
 //     }
 // }
+
+
+// function toggleMenu() {
+
+//     const nav = document.getElementsByTagName("UL")[0];
+//     console.log(nav);
+
+//     if(visualViewport.width < 1024) {
+//         console.log("toggler on");
+//         nav.classList.replace("navbar", "navbar-toggler-icon");        
+//     }
+//     else{
+//         console.log("toggler off")
+//         nav.classList.replace("navbar-toggler-icon", "navbar");   
+//     }
+// }
+
+// toggleMenu();
+// console.log(screen.width)
+// window.addEventListener('resize', toggleMenu);

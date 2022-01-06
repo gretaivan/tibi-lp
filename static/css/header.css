@@ -1,0 +1,146 @@
+:root{
+    --text-color: #000;
+    --highlight: #FE018A;
+    --link-padding: 15px;
+    --partner-color: #0B654B;
+}
+
+header {
+    height: 80px;
+    font-size:18px;
+    align-items: center;
+    /* margin: 0; */
+    display:flex;
+    justify-content: space-between;
+}
+
+nav .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+nav .navbar a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    padding: 5px 20px;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--highlight);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+li:first-child, li:nth-child(3){
+    border-right: #000 1px solid;
+    padding-right: var(--link-padding);
+}
+
+li:nth-child(2), li:nth-child(4){
+    padding-left: var(--link-padding);
+}
+
+li:first-child, li:nth-child(4){
+    font-weight: 600;
+}
+
+/* .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: black;
+  } */
+
+ .nav-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1024px) {
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px 20px;
+    }
+
+    #logo-icon{
+      grid-column: 1/ span 1;
+      justify-self: start;
+    }
+
+    .nav-icon{
+        display:block;
+        grid-column: 4/span 1;
+        justify-self: end;
+        padding: 15px;
+    }
+
+    #menu-list {display: none;}
+
+    .fa-bars {
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border: 1px black solid;
+    } 
+
+    .open .fa-bars{
+        background-color: red;
+    }
+
+    /* nav.responsive {
+        position: relative;
+        display: block;
+    } */
+    /* nav.responsive {
+      display:flex;
+      justify-content: flex-end;
+      right: 0;
+
+    } */
+
+    nav.responsive #menu-list {
+      /* float: none; */
+        position: absolute;
+        display: block;
+        width: 50%;
+        text-align: right;
+        top: 100px;
+        right: 20px;
+        justify-self: flex-end;
+        background-color: grey;
+    }
+
+    #menu-list li{
+        padding: 10px 0;
+    }
+
+    li:first-child, li:nth-child(3){
+        border-right: none;
+        padding-right: 0;
+    }
+
+}
+
+
+

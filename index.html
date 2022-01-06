@@ -9,54 +9,53 @@
      <!-- whatever is our main page -->
     <link rel="canonical" href="" />
     <!-- static -->
-    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
-    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="stylesheet" href="static/css/bootstrap.css"> -->
     <script src="static/js/bootstrap.js"></script>
     <!-- <link rel="stylesheet" href="static/css/bootstraps.css"> -->
     <link rel="shortcut icon" type="image/jpg" href="/static/images/logo.png"/>
     <!-- <script defer src="./bundle.js"></script> -->
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Flock</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Partners</a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-ca" href="#">Join the Flock</a>
-                  </li>
-                </ul>
-                
-              </div>
-            </div>
-          </nav>       
+      <img src="" id="logo-icon" style="height:50px; width: 50px;">
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+        <nav id="toggler-nav">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          
+            <ul id="menu-list" class="navbar">
+                <li><a href="" style="color:var(--partner-color);">Partners</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="" >Join the Flock</a></li>
+            </ul>
+        
+
+        </nav>
+
+
     </header>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+ 
+   
 
-    <div class="container"></div>
-
-    <h1>Flock</h1>
-
-
-    <!-- <main>, <article>, <header>, <footer>, <nav> -->
     
-    <main>
-     
+    <!-- <main>, <article>, <header>, <footer>, <nav> -->
+
+    <main class="container">
+    
         <!-- <form id="login"> -->
             <!-- <input type="text" id="username" name="username" placeholder="Enter username">
             <input type="password" id="password" name="password" placeholder="Enter a password">-->
@@ -65,16 +64,16 @@
     
 
         <!-- <p id="regLogin">Login</p> -->
-      
+    
+
+        <form id="subscribe">
+          <label for="email">Your email address</label>
+          <input type="text" id="email" name="email" placeholder="Enter an email">
+          <input type="submit" value="Become a member of the FLOCK!">
+      </form>
+
     </main>
 
-    <form id="subscribe">
-        <label for="email">Your email address</label>
-        <input type="text" id="email" name="email" placeholder="Enter an email">
-        <input type="submit" value="Become a member of the FLOCK!">
-    </form>
-
-    </div> <!--End of container-->
     <footer>
         <ul>
             <li>Copyright © 2021 Tibi. All rights reserved.</li>
@@ -91,5 +90,21 @@
     </footer>
 
     <script src="static/js/index.js"></script>
+
+    
+<script>
+  function myFunction() {
+    const x = document.getElementById("toggler-nav");
+    const toggler = document.getElementsByClassName("nav-icon")[0];
+
+    if (x.className === "toggler-nav") {
+      x.className += " responsive";
+      toggler.className += " open";
+    } else {
+      x.className = "toggler-nav";
+      toggler.className = "nav-icon";
+    }
+  }
+  </script>
 </body>
 </html>

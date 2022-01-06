@@ -1,53 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600;700&display=swap');
+@import url('./header.css');
+
+:root {
+    --gutter-x: 20px;
+    --header-color: purple;
+    --content-fonts: 'Lora', serif;
+    --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem */
+    --dark: #503088;
+    --primary: #FE018A;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0; 
     padding: 0;
 }
 
-header {
-    height: 80px;
-
+body {
+  margin: 0;
+  font-family: var(--content-fonts);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+/* Content  */
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: var(--header-fonts);
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* Links */
+a {
+  color: var(--dark);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--primary);
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 .container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.container-fluid {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--gutter-x, 0.75rem);
+  padding-left: var(--gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
 
-.nav {
+
+/* @media (min-width: 576px) {
+  .container {
+    max-width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1380px;
+  }
+} */
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1580px;
+  }
+}
+
+
+/* .nav {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-  }
-  
-  .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #0d6efd;
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .nav-link {
-      transition: none;
-    }
-  }
-  .nav-link:hover, .nav-link:focus {
-    color: #0a58ca;
-  }
-
-  .navbar {
+  } */
+/* 
+.navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -55,38 +169,33 @@ header {
     justify-content: space-between;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-  .navbar > .container,
-  .navbar > .container-fluid,
-  .navbar > .container-sm,
-  .navbar > .container-md,
-  .navbar > .container-lg,
-  .navbar > .container-xl,
-  .navbar > .container-xxl {
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-  }
-
+}
   
-
-  
-  .navbar-brand {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+.navbar-brand {
+    font: var(--logo-font);
     margin-right: 1rem;
-    font-size: 1.25rem;
     text-decoration: none;
     white-space: nowrap;
-  }
-  .navbar-nav {
+    color: var(--logo-color);
+}
+
+.navbar-nav {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding: 0 15.5px;
     margin-bottom: 0;
     list-style: none;
-  }
+   
+}
+
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
@@ -311,7 +420,7 @@ header {
   @media (min-width: 576px) {
     .navbar-expand-sm {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar-expand-sm .navbar-nav {
       flex-direction: row;
@@ -337,7 +446,7 @@ header {
   @media (min-width: 768px) {
     .navbar-expand-md {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar-expand-md .navbar-nav {
       flex-direction: row;
@@ -363,7 +472,7 @@ header {
   @media (min-width: 992px) {
     .navbar-expand-lg {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar-expand-lg .navbar-nav {
       flex-direction: row;
@@ -389,7 +498,7 @@ header {
   @media (min-width: 1200px) {
     .navbar-expand-xl {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar-expand-xl .navbar-nav {
       flex-direction: row;
@@ -415,7 +524,7 @@ header {
   @media (min-width: 1400px) {
     .navbar-expand-xxl {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
     .navbar-expand-xxl .navbar-nav {
       flex-direction: row;
@@ -440,7 +549,7 @@ header {
   }
   .navbar-expand {
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   .navbar-expand .navbar-nav {
     flex-direction: row;
@@ -466,6 +575,32 @@ header {
   .collapse:not(.show) {
     display: none;
   }
+
+  
+  a.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: red;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    text-align: right;
+}
+  @media (prefers-reduced-motion: reduce) {
+    .nav-link {
+      transition: none;
+    }
+  }
+  a.nav-link:hover, .nav-link:focus {
+    color: #0a58ca;
+  }
+
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+ */
 
 
 /* header nav div.collapse  {
