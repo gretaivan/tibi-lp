@@ -1,3 +1,5 @@
+/* organised code according the dekstop, 
+then mobile, then wide screens, flow: parent to child */
 :root{
     --text-color: #000;
     --highlight: #FE018A;
@@ -139,6 +141,12 @@ li:first-child, li:nth-child(4){
 }
 
 
-
+@media (min-width: 1750px) {
+    header {
+      padding-left: 5%;
+      padding-right: 5%; 
+      
+    }
+  }
 
 
