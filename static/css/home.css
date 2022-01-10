@@ -7,22 +7,10 @@
     --primary: #FE018A;
   }
 
-  /* hr{
-      border-bottom: 10px black solid;
-  } */
-
-  .btn-standard {
-    border: 1px var(--primary) solid;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-  .arrows {
+.arrows {
     width: 30px;
     height: 72px;
     position: absolute;
-    /* left: 50%; */
-    /* margin-left: -30px; */
     left: 40px;
     bottom: 5px;
 }
@@ -85,16 +73,43 @@ animation-delay:0s;
 -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
-
-
-.left{
-    width: 50%; 
-    float:left;
+.intro-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: calc(100vh - 80px);
 }
 
-.right{
-    background-color: #F8EEF1;
-    width:50%;
-    float:right;
+
+.intro-container > section{
+    grid-column: 6;
 }
 
+#slogans{
+    grid-column: 1 / 6;
+    grid-row: 2 / 4;
+    justify-self: center;
+    
+}
+
+.intro-container button{
+    grid-row: 5;
+    align-self: center;
+}
+.intro-container .btn-user-l {
+    grid-column: 3 / span 2;
+}
+.intro-container .btn-secondary{
+    grid-column: 4 / span 2;
+    align-self: flex-end;
+}
+
+.intro-img{
+    grid-column: 7 / 11;
+    grid-row: 1 / 5;   
+}
+
+.intro-container .btn-partner{
+    grid-column: 8 / 10
+}

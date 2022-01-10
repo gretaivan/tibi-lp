@@ -8,6 +8,7 @@
     --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem */
     --dark: #503088;
     --primary: #FE018A;
+    --partner-color: #0B654B;
   }
 
 * {
@@ -123,10 +124,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   margin-left: auto;
 }
 
-.full-height{
-  height: 100vh;
-  /* width: 100vw; */
-}
+
 
 
 /* @media (min-width: 576px) {
@@ -162,32 +160,66 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   }
 }
 
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: pointer;
+}
 
 button{
   font-family: 'Rubik', sans-serif;
   background-color: inherit;
   text-align: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border: none;
+  cursor: auto;
+  
 }
 
 .btn-standard {
-  font-size: 24px;
+  font-size: 20px;
   border: 2px solid var(--primary);
   border-radius: 10px;
   padding: 5px 15px;
-  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  transition: all 0.5s;
+}
+
+.btn-partner{
+  /* -webkit-text-stroke-color: var(--partner-color);
+  -webkit-text-fill-color: white; */
+  border: 2px solid var(--partner-color);
+  color: var(--partner-color);
+  letter-spacing: 0px;
+  filter: drop-shadow(0px 9px 4px rgba(11, 101, 75, 0.3));
 }
 
 .btn-user-l{
   -webkit-text-fill-color: var(--primary);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  letter-spacing: 2px;
-  font-weight: 100;
-  
   background-color: var(--primary);
+  filter: drop-shadow(0px 9px 4px rgba(254, 1, 138, 0.25));
 }
+
+.btn-standard:after {
+  content: '»';
+  /* content: "\f178"; */
+  position: absolute;
+  opacity: 0;  
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-standard:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn-standard:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
 
 label[for="email"]{
     display:none;
