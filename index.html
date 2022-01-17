@@ -16,7 +16,9 @@
     <link rel="shortcut icon" type="image/jpg" href="/static/images/logo.png"/>
     <!-- <script defer src="./bundle.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
 <body>
@@ -30,6 +32,7 @@
               <li><a href="" style="color:var(--partner-color);">Partners</a></li>
               <li><a href="">About Us</a></li>
               <li><a href="">Blog</a></li>
+              <li><a href="">Contact Us</a></li>
               <li><a href="" >Join the Flock</a></li>
           </ul>
       </nav>
@@ -38,7 +41,8 @@
 
     <main>
     
-    <section class="intro-container">
+    <section data-aos="zoom-in" data-aos-easing="linear"
+    data-aos-duration="600" class="intro-container">
         <div id="slogans">
           <h2>Feel disempowered</h2>
           <h2>Vulnerable</h2>
@@ -70,7 +74,7 @@
     </section>
     
 
-    <section class="problem-container xxl-cont">
+    <section  class="problem-container xxl-cont">
      <div class="card">
         <h2>
           71%
@@ -108,7 +112,7 @@
     </section>
 
     <section class="mission-container xxl-cont">
-      <div class="mission-pt1">
+      <div class="container-pt1">
 
         <div class="centered-wrapper">
         <img src="./static/images/yellow circle.png" />
@@ -122,7 +126,7 @@
       </div>
       <div class="mission-pt2">
         <div class="card">
-          <i class="fas fa-users"></i>
+          <img src="./static/images/community.png" alt="Power of community, share the love"/>
           <h3>Community</h3>
           <p>We believe in the power of community.
             Flock Off is a community space for Women and Non-binary people to
@@ -130,7 +134,7 @@
             continue to see against us as we simply try to walk home at night.</p>
         </div>
         <div class="card">
-          <img src="" />
+          <img src="./static/images/innovation.png" alt="Using technology for good"/>
           <h3>Technology for good</h3>
           <p>
             We believe in using technology for good. 
@@ -141,7 +145,7 @@ safe we feel on our streets.
           </p>
         </div>
         <div class="card">
-          <img src="" />
+          <img src="./static/images/global-network.png" alt="international team" />
           <h3>Global?</h3>
           <p>
             We believe in in embracing globalisation. 
@@ -153,7 +157,7 @@ ALL, and that is why we must work together to solve it.
           </p>
         </div>
         <div class="card">
-          <img src="" />
+          <img src="./static/images/gender-fluid.png" alt="gender-fluid" />
           <h3>Equality? </h3>
           <p>
             We believe in Co-operation.
@@ -163,6 +167,18 @@ for businesses who care about their female and N-B customers. We
 can’t do this alone. We need us all to come together if we are to 
 make lasting change for our children and our children’s children.
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="empower-container xxl-cont">
+      <div class="container-pt1">
+        <div class="centered-wrapper">
+          <h2>
+            Get Empowered<br>
+            and and blah blah blah blah
+          </h2>
+        
+          <a href="#blog">Check out our blog...</a>
         </div>
       </div>
     </section>
@@ -178,8 +194,13 @@ make lasting change for our children and our children’s children.
     
 
         <form id="subscribe">
+          <label for="name">Your name</label>
+          <input type="text"  id ="name" name="name" placeholder="Name">
           <label for="email">Your email address</label>
-          <input type="text" id="email" name="email" placeholder="Enter an email">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <label for="tester"> Would you like to get an early access to the app and help us test?</label>
+          <input type="checkbox" id="tester" name="tester">
+          
           <input type="submit" value="Become a member of the FLOCK!">
       </form>
 
@@ -187,35 +208,35 @@ make lasting change for our children and our children’s children.
 
     <footer>
         <ul>
-            <li>Copyright © 2021 Tibi. All rights reserved.</li>
+            
             <li><a href="">Privacy Policy</a></li>
             <li> <a href="">Contact Us</a></li>
-
-            <div id="social-media">
-                <img src="static/images/Facebook.png">
-                <img src="static/images/Instagram.png">
-                <img src="static/images/Google.png">
-            </div>
+            <li>Copyright © 2021 Tibi. All rights reserved.</li>
         </ul>
+        <div id="social-media">
+          <img src="static/images/Facebook.png">
+          <img src="static/images/Instagram.png">
+          <img src="static/images/Google.png">
+      </div>
         
     </footer>
 
-    <script src="static/js/index.js"></script>
+    
 
-    
-<script>
-  function toogleNav() {
-    const x = document.getElementById("toggler-nav");
-    const toggler = document.getElementsByClassName("nav-icon")[0];
-    
-    if (x.className === "toggler-nav") {
-      x.className += " responsive";
-      toggler.className += " open";
-    } else {
-      x.className = "toggler-nav";
-      toggler.className = "nav-icon";
+  <script src="static/js/index.js"></script>    
+  <script>
+    function toogleNav() {
+      const x = document.getElementById("toggler-nav");
+      const toggler = document.getElementsByClassName("nav-icon")[0];
+      
+      if (x.className === "toggler-nav") {
+        x.className += " responsive";
+        toggler.className += " open";
+      } else {
+        x.className = "toggler-nav";
+        toggler.className = "nav-icon";
+      }
     }
-  }
   </script>
 </body>
 </html>

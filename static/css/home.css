@@ -6,6 +6,7 @@
     --dark: #503088;
     --primary: #FE018A;
     --secondary-background: #F8EEF1;
+    --lightest-pink: #FFFBFC;
     --darkest-purple: #1B1030;
   }
 
@@ -96,6 +97,7 @@ animation-delay:0s;
 .intro-container button{
     grid-row: 6;
     align-self: flex-start;
+    justify-self:center;
 }
 .intro-container .btn-user-l {
     grid-column: 3 / span 2;
@@ -110,7 +112,7 @@ animation-delay:0s;
     margin: 40px 0;
     grid-column: 8 / 12;
     grid-row: 1 / 6;  
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Xosby9PG9uyDQ_CuAT5bzlfs2lRB3objpg&usqp=CAU");
+    background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,10 +156,11 @@ animation-delay:0s;
     height: 91px;
     width:91px;
     margin-top: -45.5px;
+    color: var(--primary);
 }
 
-.mission-pt1{
-    padding: 170px 0;
+.container-pt1{
+    padding: 170px 0 210px 0;
     text-align: center;
     background-color: var(--secondary-background);
 }
@@ -169,7 +172,7 @@ animation-delay:0s;
     width:40%;
 }
 
-.mission-pt1 img{
+.container-pt1 img{
     height: 190px;
     width: auto;
     z-index: 0;
@@ -187,10 +190,19 @@ animation-delay:0s;
 }
 .mission-pt2 h3{
     color: var(--header-color);
+    margin-bottom: 20px;
 }
 .mission-pt2 p{
     text-align: center;
+    margin-bottom: 20px;
 }
+
+.empower-container .container-pt1{
+    padding: 210px 0 170px 0;
+    background-color: var(--lightest-pink);
+}
+
+
 
 
 @media (min-width: 1750px) {

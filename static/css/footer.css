@@ -1,0 +1,37 @@
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-evenly; */
+    /* bottom: 80px; */
+    
+}
+
+footer ul{
+    display: flex;
+    /* justify-items: stretch; */
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer li{
+    display: block;
+    /* justify-self: stretch ; */
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}

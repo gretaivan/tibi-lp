@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600;700&family=Rubik:wght@500&display=swap');
 @import url('./header.css');
+@import url('./footer.css');
 
 :root {
     --gutter-x: 20px;
@@ -10,6 +11,7 @@
     --highlight: #FE018A;
     --partner-color: #0B654B;
     --darkest-purple: #1B1030;
+    --lightest-pink: #FFFBFC;
   }
 
 * {
@@ -17,6 +19,12 @@
     margin: 0; 
     padding: 0;
 }
+html{
+  /* box-sizing: border-box; */
+  margin: 0; 
+  padding: 0;
+}
+
 
 body {
   margin: 80px 0;
@@ -25,7 +33,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: var(--lightest-pink);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -184,10 +192,9 @@ button{
   font-size: 20px;
   border: 2px solid var(--highlight);
   border-radius: 10px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   letter-spacing: 1px;
   font-weight: 100;
-  transition: all 0.5s;
 }
 
 .btn-partner{
@@ -216,7 +223,7 @@ button{
 }
 
 button:after {
-  content: '»';
+  content: ' »';
   /* content: "\f178"; */
   position: absolute;
   opacity: 0;  
@@ -292,6 +299,9 @@ button:hover:after {
 
 
 
-label[for="email"]{
+label{
     display:none;
+}
+label[for="tester"]{
+  display: block;
 }
