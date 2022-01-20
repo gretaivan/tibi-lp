@@ -1,8 +1,11 @@
+/* organised code according the dekstop, 
+then mobile, then wide screens, flow: parent to child */
 :root{
-    --text-color: #000;
+    --text-color: #321F52;;
     --highlight: #FE018A;
     --link-padding: 15px;
     --partner-color: #0B654B;
+
 }
 
 header {
@@ -20,7 +23,7 @@ header {
     padding: 0 20px 0 20px;
     /* width: calc(100vw - 30px); */
     /* margin: 0 0px 0 30px; */
-   
+    z-index: 10;
 }
 
 nav .navbar {
@@ -46,16 +49,16 @@ nav a:hover, nav a:focus {
     font-weight: 600;
   }
 
-li:first-child, li:nth-child(3){
-    border-right: #000 1px solid;
+header li:first-child, header li:nth-child(4){
+    border-right: var(--text-color) 1px solid;
     padding-right: var(--link-padding);
 }
 
-li:nth-child(2), li:nth-child(4){
+header li:nth-child(2) {
     padding-left: var(--link-padding);
 }
 
-li:first-child, li:nth-child(4){
+header li:first-child, header li:nth-child(5){
     font-weight: 600;
 }
 
@@ -131,7 +134,7 @@ li:first-child, li:nth-child(4){
         
     /* } */
 
-    li:first-child, li:nth-child(3){
+    header li:first-child, header li:nth-child(4){
         border-right: none;
         padding-right: 0;
     }
@@ -139,6 +142,12 @@ li:first-child, li:nth-child(4){
 }
 
 
-
+@media (min-width: 1750px) {
+    header {
+      padding-left: 5%;
+      padding-right: 5%; 
+      
+    }
+  }
 
 

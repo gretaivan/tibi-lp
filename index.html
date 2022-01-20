@@ -16,7 +16,9 @@
     <link rel="shortcut icon" type="image/jpg" href="/static/images/logo.png"/>
     <!-- <script defer src="./bundle.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
 <body>
@@ -30,6 +32,7 @@
               <li><a href="" style="color:var(--partner-color);">Partners</a></li>
               <li><a href="">About Us</a></li>
               <li><a href="">Blog</a></li>
+              <li><a href="">Contact Us</a></li>
               <li><a href="" >Join the Flock</a></li>
           </ul>
       </nav>
@@ -38,40 +41,148 @@
 
     <main>
     
-    <div class="container">
-      <section class="full-height left">
+    <section data-aos="zoom-in" data-aos-easing="linear"
+    data-aos-duration="600" class="intro-container">
+        <div id="slogans">
           <h2>Feel disempowered</h2>
           <h2>Vulnerable</h2>
           <h2>Our Bodies. Our Streets</h2>
           <h2>Go with the Flock</h2>
-
-          <button class="btn-standard">
-            Join the flock!
-          </button>
-          <button class="btn-secondary">
-            <!-- (i) pottentially a hover over with explanation -->
-            get access to the app pre-launch... (i)
-          </button>
-        
-          <hr>
-          <svg class="arrows">
-            <path class="a1" d="M0 0 L15 12 L30 0"></path>
-            <path class="a2" d="M0 15 L15 27 L30 15"></path>
-            <path class="a3" d="M0 30 L15 42 L30 30"></path>
-          </svg>
         </div>
-        
 
-      </section>
+        <button class="btn-standard btn-user-l" onclick="alert('Go to the signup form')">
+          Join the Flock!
+        </button>
+
+        <button class="btn-secondary">
+          <!-- (i) pottentially a hover over with explanation -->
+          get an early access to the app... (i)
+        </button>
       
-      <section class="full-height right">
-        <img src="" style="height: 50%; width: 80%;">
-      </section>
-    </div>
+      
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L15 12 L30 0"></path>
+          <path class="a2" d="M0 15 L15 27 L30 15"></path>
+          <path class="a3" d="M0 30 L15 42 L30 30"></path>
+        </svg>
+   
+      <div class="intro-backdrop"></div>
+        <img src=""  class="intro-img">
 
+        
+        <button class="btn-standard btn-partner">Become mission ally!</button>
+    </section>
+    
 
+    <section  class="problem-container xxl-cont">
+     <div class="card">
+        <h2>
+          71%
+        </h2>
+        <h3>
+          experienced sexual harassment in a public space
+        </h3>
+      </div>
 
-      <div ></div>
+      <div class="card">
+        <h2>
+          5 million 
+        </h2>
+        <h3>
+          are stalked each year
+        </h3>
+      </div>
+
+      <div class="card">
+        <h2>
+          1 in 20
+        </h2>
+        <h3>
+          women had experienced rape attempts</h3>
+      </div>
+
+      <div class="card">
+        <h2>
+          90%
+        </h2>
+        <h3>
+          Other statistics are needed
+        </h3>
+      </div> 
+    </section>
+
+    <section class="mission-container ">
+      <div class="container-pt1 xxl-cont">
+
+        <div class="centered-wrapper">
+        <img src="./static/images/yellow circle.png" />
+        <h2>
+          Maybe one person can’t change the world, <br> but two  - sure can! <br>Tell street harassment to Flock Off
+        </h2>
+      
+        <a href="#about">Read more...</a>
+        </div>
+
+      </div>
+      <div class="mission-pt2">
+        <div class="card">
+          <img src="./static/images/community.png" alt="Power of community, share the love"/>
+          <h3>Community</h3>
+          <p>We believe in the power of community.
+            Flock Off is a community space for Women and Non-binary people to
+            share their frustration and despair at the senseless violence we 
+            continue to see against us as we simply try to walk home at night.</p>
+        </div>
+        <div class="card">
+          <img src="./static/images/innovation.png" alt="Using technology for good"/>
+          <h3>Technology for good</h3>
+          <p>
+            We believe in using technology for good. 
+Love it or hate it, technology is an integral part of our daily lives. 
+Smart phones are becoming more affordable and accessible, and we
+believe that this provides a unique opportunity to help change how 
+safe we feel on our streets.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./static/images/global-network.png" alt="international team" />
+          <h3>Global?</h3>
+          <p>
+            We believe in in embracing globalisation. 
+Our international team come from multiple countries with diverse 
+career backgrounds, but we are united by a shared feeling of 
+despair at seeing the same stories of rape, violence and harassment
+trending in each of our countries. This is an issue that affects us 
+ALL, and that is why we must work together to solve it.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./static/images/gender-fluid.png" alt="gender-fluid" />
+          <h3>Equality? </h3>
+          <p>
+            We believe in Co-operation.
+Just like Flock Off is about ordinary women and non-binary people 
+(you and me), taking the power back into our own hands- it is also 
+for businesses who care about their female and N-B customers. We 
+can’t do this alone. We need us all to come together if we are to 
+make lasting change for our children and our children’s children.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="empower-container xxl-cont">
+      <div class="container-pt1">
+        <div class="centered-wrapper">
+          <h2>
+            Get Empowered<br>
+            and and blah blah blah blah
+          </h2>
+        
+          <a href="#blog">Check out our blog...</a>
+        </div>
+      </div>
+    </section>
+  
         <!-- <form id="login"> -->
             <!-- <input type="text" id="username" name="username" placeholder="Enter username">
             <input type="password" id="password" name="password" placeholder="Enter a password">-->
@@ -82,45 +193,70 @@
         <!-- <p id="regLogin">Login</p> -->
     
 
-        <form id="subscribe">
-          <label for="email">Your email address</label>
-          <input type="text" id="email" name="email" placeholder="Enter an email">
-          <input type="submit" value="Become a member of the FLOCK!">
-      </form>
+        
 
     </main>
 
-    <footer>
-        <ul>
-            <li>Copyright © 2021 Tibi. All rights reserved.</li>
-            <li><a href="">Privacy Policy</a></li>
-            <li> <a href="">Contact Us</a></li>
+    <footer class="xxl-cont">
+      <div>
+        <!-- <div id="social-media">
+          <img src="static/images/Facebook.png">
+          <img src="static/images/Instagram.png">
+          <img src="static/images/Google.png">
+       </div> -->
+        <ul> 
+          <li><img src="static/images/Facebook.png">
+            <img src="static/images/Instagram.png">
+            <img src="static/images/Google.png"></li>  
+          <li> <a href="">Contact Us</a></li>
+          <li> <a href="">Sponsor or Volunteer</a></li>       
+          <li> <a href="">Team</a></li>  
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Copyright © tbc 2022. All rights reserved.</a></li>
+       </ul>
 
-            <div id="social-media">
-                <img src="static/images/Facebook.png">
-                <img src="static/images/Instagram.png">
-                <img src="static/images/Google.png">
-            </div>
-        </ul>
+      </div>
+      <div>
+        <form id="subscribe">
+          <label for="name">Your name</label>
+          <input type="text"  id ="name" name="name" placeholder="Name">
+          <label for="email">Your email address</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="checkbox" id="tester" name="tester">
+          <label for="tester">I want an early access to the app<br> and contribute with my feedback</label>
+          <input type="checkbox" id="policy" name="policy">
+          <label for="policy">Please view the Data Protection<br>and Privacy Policy</label>
+         
+          <input type="submit" value="Submit">
+      </form>
+      </div>   
+      <div>
+        <h2>Become a member</h2>
+        <p>Help us to make streets safer to you and others and empower you. Feeling generous? Become a tester - get 
+          an early access to the app and help is tailor it to your and the community needs.</p>
+          <p class="highlighted">Make a difference today...</p>
+      </div>
+       
+        
         
     </footer>
 
-    <script src="static/js/index.js"></script>
+    
 
-    
-<script>
-  function toogleNav() {
-    const x = document.getElementById("toggler-nav");
-    const toggler = document.getElementsByClassName("nav-icon")[0];
-    
-    if (x.className === "toggler-nav") {
-      x.className += " responsive";
-      toggler.className += " open";
-    } else {
-      x.className = "toggler-nav";
-      toggler.className = "nav-icon";
+  <script src="static/js/index.js"></script>    
+  <script>
+    function toogleNav() {
+      const x = document.getElementById("toggler-nav");
+      const toggler = document.getElementsByClassName("nav-icon")[0];
+      
+      if (x.className === "toggler-nav") {
+        x.className += " responsive";
+        toggler.className += " open";
+      } else {
+        x.className = "toggler-nav";
+        toggler.className = "nav-icon";
+      }
     }
-  }
   </script>
 </body>
 </html>
