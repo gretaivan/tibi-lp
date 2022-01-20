@@ -1,7 +1,7 @@
 /* organised code according the dekstop, 
 then mobile, then wide screens, flow: parent to child */
 :root{
-    --text-color: #1B1030;
+    --text-color: #321F52;;
     --highlight: #FE018A;
     --link-padding: 15px;
     --partner-color: #0B654B;

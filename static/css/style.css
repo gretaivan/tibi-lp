@@ -10,7 +10,7 @@
     --dark: #503088;
     --highlight: #FE018A;
     --partner-color: #0B654B;
-    --darkest-purple: #1B1030;
+    --darkest-purple: #321F52;
     --lightest-pink: #FFFBFC;
   }
 
@@ -222,7 +222,7 @@ button{
   padding:5px;
 }
 
-button:after {
+button:after{
   content: ' »';
   /* content: "\f178"; */
   position: absolute;
@@ -295,13 +295,8 @@ button:hover:after {
   }
 }
 
-
-
-
-
 label{
-    display:none;
+  display:none;
 }
-label[for="tester"]{
-  display: block;
-}
+
+
