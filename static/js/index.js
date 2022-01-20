@@ -1,7 +1,9 @@
+AOS.init();
 const main = document.querySelector('main');
 
 const publicRoutes = ['#'];
 const privateRoutes = [];
+
 
 
 // window.addEventListener('hashchange', updateContent);
