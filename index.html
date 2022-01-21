@@ -29,11 +29,11 @@
       </a>
       <nav id="toggler-nav">
           <ul id="menu-list" class="navbar">
-              <li><a href="" style="color:var(--partner-color);">Partners</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="" >Join the Flock</a></li>
+              <li><a href="/partners" style="color:var(--partner-color);">Partners</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
+              <li><a href="#subscribe" >Join the Flock</a></li>
           </ul>
       </nav>
     </header>
@@ -41,8 +41,7 @@
 
     <main>
     
-    <section data-aos="zoom-in" data-aos-easing="linear"
-    data-aos-duration="600" class="intro-container">
+    <section class="intro-container">
         <div id="slogans">
           <h2>Feel disempowered</h2>
           <h2>Vulnerable</h2>
@@ -50,11 +49,11 @@
           <h2>Go with the Flock</h2>
         </div>
 
-        <button class="btn-standard btn-user-l" onclick="alert('Go to the signup form')">
+        <button class="btn-standard btn-user-l" onClick="document.getElementById('subscribe').scrollIntoView();">
           Join the Flock!
         </button>
 
-        <button class="btn-secondary">
+        <button class="btn-secondary" onClick="document.getElementById('subscribe').scrollIntoView();">
           <!-- (i) pottentially a hover over with explanation -->
           get an early access to the app... (i)
         </button>
@@ -72,7 +71,7 @@
         <img src=""  class="intro-img">
 
         
-        <button class="btn-standard btn-partner">Become mission ally!</button>
+        <button class="btn-standard btn-partner" onclick="location.href='/partners';">Become mission ally!</button>
     </section>
     
 
@@ -126,7 +125,7 @@
           Maybe one person can’t change the world, <br> but two  - sure can! <br>Tell street harassment to Flock Off
         </h2>
       
-        <a href="#about">Read more...</a>
+        <a href="/about">Read more...</a>
         </div>
 
       </div>
@@ -184,7 +183,7 @@ make lasting change for our children and our children’s children.
             and and blah blah blah blah
           </h2>
         
-          <a href="#blog">Check out our blog...</a>
+          <a href="/blog">Check out our blog...</a>
         </div>
       </div>
     </section>
@@ -225,11 +224,11 @@ make lasting change for our children and our children’s children.
           <li><img src="static/images/Facebook.png">
             <img src="static/images/Instagram.png">
             <img src="static/images/Google.png"></li>  
-          <li> <a href="">Contact Us</a></li>
-          <li> <a href="">Sponsor or Volunteer</a></li>       
-          <li> <a href="">Team</a></li>  
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Copyright © tbc 2022. All rights reserved.</a></li>
+          <li> <a href="/contact-us">Contact Us</a></li>
+          <li> <a href="/partners">Sponsor or Volunteer</a></li>       
+          <li> <a href="/about#team">Team</a></li>  
+          <li><a href="/policy">Privacy Policy</a></li>
+          <li><a href="/copyright">Copyright © tbc 2022. All rights reserved.</a></li>
        </ul>
 
       </div>
