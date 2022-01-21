@@ -202,8 +202,32 @@ animation-delay:0s;
     background-color: var(--lightest-pink);
 }
 
+.pointer{
+    position: absolute;
+    animation: subsc-pointer 1.5s infinite;
+}
 
 
+.pointing-arrow{
+    margin-left: -170px;
+    height: 150px;
+    transform: scaleX(-0.7) rotate(-35deg);
+    filter: invert(100%);
+    z-index: 1;
+    margin-top: -120px;
+}
+
+h2.pointer{
+    margin-left: -130px;
+    margin-top: -130px;
+    z-index: 10;
+    transform: scaleX(1.3) rotate(-30deg);
+}
+
+@keyframes subsc-pointer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 @media (min-width: 1750px) {
     .xxl-cont {
