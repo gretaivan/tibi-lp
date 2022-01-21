@@ -4,7 +4,30 @@ const main = document.querySelector('main');
 const publicRoutes = ['#'];
 const privateRoutes = [];
 
+const subscribeForm = document.getElementById("subscribe"); 
 
+subscribeForm.addEventListener('submit', subscribe);
+
+async function subscribe(e){ 
+    e.preventDefault(); 
+    
+
+    try{
+        const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+        }
+        alert(options.body); 
+
+        const res = await fetch(urlPath, options);
+        const resData = await res.json(); 
+
+    } catch(err) {
+        console.log(err); 
+    }
+
+}
 
 // window.addEventListener('hashchange', updateContent);
 // window.addEventListener('load', updateContent);
