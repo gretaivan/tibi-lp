@@ -66,7 +66,6 @@ footer ul{
 footer li{
     display: block;
     /* justify-self: stretch ; */
-    font-size: 0.8rem;
     padding: 10px;
 }
 
@@ -117,7 +116,7 @@ footer input[type="text"], input[type="email"]{
 input::placeholder{
     color: black;
     opacity: 1;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 input:focus
@@ -151,9 +150,9 @@ input[type="submit"]{
     cursor: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+
     line-height: 0%; */
-    font-size: 20px;
+    font-size: 1.3rem;
     border: 2px solid var(--highlight);
     border-radius: 10px;
     padding: 5px 10px;

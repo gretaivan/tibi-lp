@@ -205,8 +205,23 @@ animation-delay:0s;
 .pointer{
     position: absolute;
     animation: subsc-pointer 1.5s infinite;
+} 
+
+.voices{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* flex-basis: 33%; */
+    flex: 2 0 21%;
+    margin-bottom: 100px;
 }
 
+.voices div{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+
+}
 
 .pointing-arrow{
     margin-left: -170px;
