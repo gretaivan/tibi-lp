@@ -18,7 +18,7 @@ async function subscribe(e){
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
         }
-        alert(options.body); 
+        alert("Not a magician - subscription functionality is under construction, but I can tell that your input was : " + options.body); 
 
         const res = await fetch(urlPath, options);
         const resData = await res.json(); 
