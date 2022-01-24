@@ -22,26 +22,27 @@
     stroke: var(--dark);
     fill: transparent;
     stroke-width: 3px;  
-    animation: arrow 2.5s infinite;
-    -webkit-animation: arrow 2.5s infinite; 
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
 }
+
 
 @media screen and (max-width: 1024px) {
     .arrows {
-        width: 30px;
+        width: 40px;
         height: 42px;
         position: absolute;
         left: 50%;
         margin-left: 0;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .arrows path {
             stroke: var(--dark);
             fill: transparent;
-            stroke-width: 1px;  
-            animation: arrow 2.5s infinite;
-            -webkit-animation: arrow 2.5s infinite; 
+            /* stroke-width: 1px;   */
+            animation: arrow 2s infinite;
+            -webkit-animation: arrow 2s infinite; 
         }
 }
 
@@ -105,6 +106,7 @@ animation-delay:0.5s;
     align-self: flex-start;
     justify-self:center;
 }
+
 .intro-container .btn-user-l {
     grid-column: 3 / span 2;
 }
@@ -132,6 +134,23 @@ animation-delay:0.5s;
     grid-column: 7 / 13;
     grid-row: 1 / 7;
     background-color: var(--secondary-background); 
+}
+
+
+@media screen and (max-width: 1345px){
+    .intro-container .btn-partner{
+        grid-column: 8 / 12;
+    }
+}
+
+@media screen and (max-width: 1082px){
+    .intro-container .btn-user-l{
+        grid-column: 2 / span 4;
+    }
+    .intro-container .btn-secondary{
+        grid-column: 3 / span 4;
+        margin-right: 5%;
+    }
 }
 
 .problem-container{
@@ -164,6 +183,7 @@ animation-delay:0.5s;
 }
 
 
+
 .mission-container img{
     height: 91px;
     width:91px;
@@ -190,6 +210,7 @@ animation-delay:0.5s;
     z-index: 0;
 }
 
+
 .mission-container h2{
    z-index: 1;
    margin-top: -150px;
@@ -200,6 +221,7 @@ animation-delay:0.5s;
     flex-flow: wrap row;
     justify-content: space-evenly;
 }
+
 .mission-pt2 h3{
     color: var(--header-color);
     margin-bottom: 20px;
@@ -214,18 +236,11 @@ animation-delay:0.5s;
     background-color: var(--lightest-pink);
 }
 
-.pointer{
-    position: absolute;
-    animation: subsc-pointer 1.5s infinite;
-} 
-
 .voices{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* flex-basis: 33%; */
     flex: 2 0 21%;
-    /* margin-bottom: 100px; */
     margin: 0 5% 160px;
 }
 
@@ -234,29 +249,54 @@ animation-delay:0.5s;
     height: 250px;
     width: 250px;
     flex: 1 0 33%;
-
 }
 
-.pointing-arrow{
-    margin-top: -100px;
-    margin-left: -180px;
-    height: 150px;
-    transform: scaleX(-0.7) rotate(-20deg);
-    filter: invert(100%);
-    z-index: 1;
+@media screen and (max-width: 912px){
+    .problem-container{
+        flex-flow: wrap;
+    }
+    .card{
+        width: 35%;
+        align-items: baseline;
+        text-align: center;
+    
+    }
+
+    .card:first-child, .card:nth-child(2){
+        padding-bottom: 100px;
+     }
+     .card h2{
+        margin-bottom: 40px;
+    }
+
+    .container-pt1{
+        padding: 150px 0 180px 0;
+    }
+    .centered-wrapper{
+        margin: 0 auto;
+        display: flex;
+        flex-flow: nowrap column;
+        width:50%;
+    }
+
+    .container-pt1 img{
+        height: 200px;
+        width: auto;
+        z-index: 0;
+    }
+
+    .empower-container .container-pt1{
+        padding: 120px 0 170px 0;
+        background-color: var(--lightest-pink);
+    }
+
+    .voices{
+        margin: 0;
+    }
 }
 
-h2.pointer{
-    margin-left: -150px;
-    margin-top: -100px;
-    z-index: 10;
-    transform: scaleX(1.3) rotate(-30deg);
-}
 
-@keyframes subsc-pointer {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+
 
 @media (min-width: 1750px) {
     .xxl-cont {
