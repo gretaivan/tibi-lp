@@ -208,36 +208,6 @@ button:hover:after {
   margin-left: auto;
 }
 
-
-
-
-/* @media (min-width: 576px) {
-  .container {
-    max-width: 550px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1180px;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1380px;
-  }
-} */
-
-/* divides to 145 of 12 columns */
 @media (min-width: 1740px) {
   .container {
     max-width: 1740px;

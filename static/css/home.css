@@ -22,8 +22,8 @@
     stroke: var(--dark);
     fill: transparent;
     stroke-width: 3px;  
-    animation: arrow 1.5s infinite;
-    -webkit-animation: arrow 1.5s infinite; 
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
 }
 
 @keyframes arrow
@@ -62,7 +62,7 @@ animation-delay:-0.5s;
     -webkit-animation-delay:0s; 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
     .arrows {
         
         position: absolute;
@@ -150,20 +150,36 @@ animation-delay:-0.5s;
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 638px){
     .intro-container button{
         grid-row: 5;
     }
-    .intro-container .btn-secondary{
-        grid-row: 5;
-        align-self:flex-end;
-        grid-column: 2 / span 6;
-        margin-right: 0;
-        font-size: 0.9rem;
+
+    .intro-container .btn-user-l{
+        grid-column: 2 / span 4;
+        justify-self: stretch;
+        align-self: center;
     }
+    .intro-container .btn-secondary{
+        grid-column: 2 / span 6;
+        margin-right: 5%;
+        margin-top: 25%;
+        align-self: center;
+    }
+
+    .intro-container .btn-partner{
+        grid-column: 8 / 1span 4;
+        grid-row: 5;
+        justify-self: stretch;
+        align-self: center;
+        font-size: 1.17rem;
+        padding: 7px 0;
+        
+    }
+    
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 540px){
     .intro-container{
         height: calc(100vh - 80px);
     }
@@ -177,7 +193,7 @@ animation-delay:-0.5s;
     }
     
     .intro-container button.btn-user-l{
-        grid-column: 3 / 12;
+        grid-column: 2 / 12;
         grid-row: 4 / 5;
         align-self: flex-start;
         justify-self: stretch;
@@ -197,7 +213,7 @@ animation-delay:-0.5s;
        
     
     .intro-container .btn-partner{
-        grid-column: 3 / 12;
+        grid-column: 2 / 12;
         grid-row: 5 / 6;
         justify-self: stretch;
         align-self: center;
@@ -356,7 +372,7 @@ animation-delay:-0.5s;
     }
 }
 
-@media screen and (max-width: 540px){
+/* @media screen and (max-width: 540px){
     .centered-wrapper{
         margin: 0 auto;
         display: flex;
@@ -367,12 +383,13 @@ animation-delay:-0.5s;
     .card{
         width: 45%;
     }
-}
+} */
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 540px){
     .centered-wrapper{
         width: 90%;
     }
+
     .empower-container .container-pt1{
         padding: 120px 0 150px 0;
     }
