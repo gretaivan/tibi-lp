@@ -22,34 +22,14 @@
     stroke: var(--dark);
     fill: transparent;
     stroke-width: 3px;  
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite; 
-}
-
-
-@media screen and (max-width: 1024px) {
-    .arrows {
-        width: 40px;
-        height: 42px;
-        position: absolute;
-        left: 50%;
-        margin-left: 0;
-        bottom: 15px;
-    }
-
-    .arrows path {
-            stroke: var(--dark);
-            fill: transparent;
-            /* stroke-width: 1px;   */
-            animation: arrow 2s infinite;
-            -webkit-animation: arrow 2s infinite; 
-        }
+    animation: arrow 1.5s infinite;
+    -webkit-animation: arrow 1.5s infinite; 
 }
 
 @keyframes arrow
 {
     0% {opacity:0}
-     40% {opacity:0} /*change back to 1 */
+    40% {opacity:0} /*change back to 1 */
     80% {opacity:1}/*change back to 0*/
     100% {opacity:0}
 }
@@ -73,15 +53,32 @@ animation-delay:-1s;
 }
 
 .arrows path.a3 { 
-animation-delay:0.5s;
--webkit-animation-delay:0.5s; /* Safari 和 Chrome */
+animation-delay:-0.5s;
+-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
 }
 
 .arrows path.a4 { 
     animation-delay:0s;
     -webkit-animation-delay:0s; 
 }
-    
+
+@media screen and (max-width: 1024px) {
+    .arrows {
+        
+        position: absolute;
+        left: 50%;
+        margin-left: 0;
+        bottom: 15px;
+    }
+
+    .arrows path {
+            stroke: var(--dark);
+            fill: transparent;
+            animation: arrow 2s infinite;
+            -webkit-animation: arrow 2s infinite; 
+    }
+}
+
 
 .intro-container{
     display: grid;
@@ -152,6 +149,65 @@ animation-delay:0.5s;
         margin-right: 5%;
     }
 }
+
+@media screen and (max-width: 540px){
+    .intro-container button{
+        grid-row: 5;
+    }
+    .intro-container .btn-secondary{
+        grid-row: 5;
+        align-self:flex-end;
+        grid-column: 2 / span 6;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .intro-container{
+        height: calc(100vh - 80px);
+    }
+    
+    #slogans{
+        grid-column: 2 / 11;
+        grid-row: 1 / 4;
+        justify-self: center;
+        align-self: center;
+        z-index: 10;
+    }
+    
+    .intro-container button.btn-user-l{
+        grid-column: 3 / 12;
+        grid-row: 4 / 5;
+        align-self: flex-start;
+        justify-self: stretch;
+        align-self: flex-end;
+    }
+    
+    .intro-container .btn-secondary{
+        grid-column: 4 / 12;
+        grid-row: 5 / 6;
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+    
+    .intro-img{
+        /* margin: 40px 0; */
+    }
+       
+    
+    .intro-container .btn-partner{
+        grid-column: 3 / 12;
+        grid-row: 5 / 6;
+        justify-self: stretch;
+        align-self: center;
+    }
+    
+    .intro-backdrop{
+        background-color: inherit;
+    }
+}
+    
 
 .problem-container{
     display: flex;
@@ -251,6 +307,14 @@ animation-delay:0.5s;
     flex: 1 0 33%;
 }
 
+
+@media (min-width: 1750px) {
+    .xxl-cont {
+      padding-left: 5%;
+      padding-right: 5%; 
+    }
+}
+
 @media screen and (max-width: 912px){
     .problem-container{
         flex-flow: wrap;
@@ -259,7 +323,6 @@ animation-delay:0.5s;
         width: 35%;
         align-items: baseline;
         text-align: center;
-    
     }
 
     .card:first-child, .card:nth-child(2){
@@ -282,12 +345,10 @@ animation-delay:0.5s;
     .container-pt1 img{
         height: 200px;
         width: auto;
-        z-index: 0;
     }
 
     .empower-container .container-pt1{
         padding: 120px 0 170px 0;
-        background-color: var(--lightest-pink);
     }
 
     .voices{
@@ -295,12 +356,39 @@ animation-delay:0.5s;
     }
 }
 
-
-
-
-@media (min-width: 1750px) {
-    .xxl-cont {
-      padding-left: 5%;
-      padding-right: 5%; 
+@media screen and (max-width: 540px){
+    .centered-wrapper{
+        margin: 0 auto;
+        display: flex;
+        flex-flow: nowrap column;
+        width: 85%;
     }
-  }
+
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .centered-wrapper{
+        width: 90%;
+    }
+    .empower-container .container-pt1{
+        padding: 120px 0 150px 0;
+    }
+    
+    .mission-pt2 .card{
+        width: 90%;
+    }
+
+    .mission-pt2 .card:nth-child(4){
+        padding-top: 100px;;
+    }
+    .voices div{
+        border: 1px solid black;
+        height: 150px;
+        width: 250px;
+        flex: 1 0 33%;
+    }
+}
+
