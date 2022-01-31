@@ -9,6 +9,7 @@ then mobile, then wide screens, flow: parent to child */
 }
 
 header {
+    order: 1;
     position: fixed;
     height: 80px;
     /* padding-bottom: 20px; */

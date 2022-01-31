@@ -1,11 +1,11 @@
 :root{
-    --darkest-purple: #321F52;
+    --darkest-purple: #1B1030;
     --content-color: #D5DAEF;
     --highlight: #FE018A;
 }
 
 footer{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     padding: 40px 20px 10px;
     background-color: var(--darkest-purple);
@@ -14,6 +14,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     color: var(--content-color);
+    /* margin-top: auto ; */
 }
 
 footer div{
