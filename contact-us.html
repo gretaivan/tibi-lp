@@ -28,6 +28,7 @@
         <nav id="toggler-nav">
             <ul id="menu-list" class="navbar">
                 <li><a href="partners.html" style="color:var(--partner-color);">Partners</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
@@ -36,7 +37,10 @@
         </nav>
     </header>
     <main>
-        <h3>whatever text you want to add here</h3>
+        
+        <h3>Did not find what you were looking for?</h3>
+        <h3>Drop Us a line</h3>
+        <img src="static/images/contact-us.png" class="signpost" alt="the sign-post with direction next to blue, green and light green stones"/>
         <form>
             <input type="name" id="name" placeholder="Name">
             <input type="email" id="email" placeholder="Email">
@@ -49,8 +53,6 @@
             <input type="submit" value="Submit">
         </form>
     </main>
-
-
 
     <footer class="xxl-cont">
         <div>
@@ -94,6 +96,19 @@
           
       </footer>
     <script src="static/js/index.js"></script>    
-
+    <script>
+      function toogleNav() {
+        const x = document.getElementById("toggler-nav");
+        const toggler = document.getElementsByClassName("nav-icon")[0];
+        
+        if (x.className === "toggler-nav") {
+          x.className += " responsive";
+          toggler.className += " open";
+        } else {
+          x.className = "toggler-nav";
+          toggler.className = "nav-icon";
+        }
+      }
+    </script>
     </body>
 </html>

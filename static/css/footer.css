@@ -83,7 +83,7 @@ footer a {
     justify-content: space-evenly;
 }
 
-form{
+footer form{
     font-family: 'Lora', serif;
     width: 320px;
     display: flex;
@@ -99,34 +99,41 @@ footer input {
     border-radius: 10px;
 }
 
-footer input[type="text"], input[type="email"]{
+footer input[type="text"], footer input[type="email"]{
     display: block;
     height: 40px;
     font-size: 1.3rem;
-    border: 0.1px white solid;
     color:white;
     padding: 0 10px;
 }
 
-input::placeholder{
+footer input[type="text"]:hover, footer input[type="email"]:hover, input[type="submit"]:hover{
+    
+    border: 1px solid var(--content-color);
+    
+}
+
+
+
+footer input::placeholder{
     color: black;
     opacity: 1;
     font-size: 1.3rem;
 }
 
-input:focus
+footer input:focus
 {
     opacity: 1;
 }
 
-input[type="checkbox"]{
+footer input[type="checkbox"]{
     height: 25px;
     width: 25px;
     margin-top: 15px;
 
 }
 
-label[for="tester"], label[for="policy"]{
+footer label[for="tester"], label[for="policy"]{
   display: block;
   width: 92%;
   padding-left: 20px;
@@ -150,10 +157,12 @@ input[type="submit"]{
     opacity: 1;
 }
 
+
 .pointer{
     position: absolute;
     animation: subsc-pointer 1.5s infinite;
 } 
+
 .pointing-arrow{
     margin-top: -100px;
     margin-left: -180px;
@@ -286,7 +295,7 @@ h2.pointer{
         width: 80%;
     }
 
-    form{
+    footer form{
         margin-top: 10px;
         width: 290px;
     }
@@ -304,14 +313,14 @@ h2.pointer{
         transform: rotate(-15deg);
     }
 
-    input[type="checkbox"]{
+    footer input[type="checkbox"]{
         height: 25px;
         width: 25px;
         margin-top: 25px;
     
     }
     
-    label[for="tester"], label[for="policy"]{
+    footer label[for="tester"], label[for="policy"]{
       display: block;
       width: 91%;
       padding-left: 5px;
