@@ -1,8 +1,8 @@
 AOS.init();
-const main = document.querySelector('main');
+// const main = document.querySelector('main');
 
-const publicRoutes = ['#'];
-const privateRoutes = [];
+// const publicRoutes = ['#', 'contact-us'];
+// const privateRoutes = [];
 
 const subscribeForm = document.getElementById("subscribe"); 
 
@@ -10,7 +10,6 @@ subscribeForm.addEventListener('submit', subscribe);
 
 async function subscribe(e){ 
     e.preventDefault(); 
-    
 
     try{
         const options = {

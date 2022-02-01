@@ -9,6 +9,7 @@ then mobile, then wide screens, flow: parent to child */
 }
 
 header {
+    order: 1;
     position: fixed;
     height: 80px;
     /* padding-bottom: 20px; */
@@ -49,7 +50,7 @@ nav a:hover, nav a:focus {
     font-weight: 600;
   }
 
-header li:first-child, header li:nth-child(4){
+header li:first-child, header li:nth-child(5){
     border-right: var(--text-color) 1px solid;
     padding-right: var(--link-padding);
 }
@@ -58,7 +59,7 @@ header li:nth-child(2) {
     padding-left: var(--link-padding);
 }
 
-header li:first-child, header li:nth-child(5){
+header li:first-child, header li:last-child{
     font-weight: 600;
 }
 
@@ -134,13 +135,12 @@ header li:first-child, header li:nth-child(5){
         
     /* } */
 
-    header li:first-child, header li:nth-child(4){
+    header li:first-child, header li:nth-child(5){
         border-right: none;
         padding-right: 0;
     }
 
 }
-
 
 @media (min-width: 1750px) {
     header {
