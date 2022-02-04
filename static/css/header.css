@@ -1,14 +1,15 @@
 /* organised code according the dekstop, 
 then mobile, then wide screens, flow: parent to child */
-:root{
-    --text-color: #321F52;;
-    --highlight: #FE018A;
-    --link-padding: 15px;
-    --partner-color: #0B654B;
+@import url(./style.css);
 
+:root{
+    --text-color: var(--lightest-pink);
+    --link-padding: 15px;
+    --current: #321F52;
 }
 
 header {
+    background-color: var(--lightest-purple);
     order: 1;
     position: fixed;
     height: 80px;
@@ -20,7 +21,6 @@ header {
     /* position:absolute;  */
     top:0;
     width: 100vw;
-    background-color: white;
     padding: 0 20px 0 20px;
     /* width: calc(100vw - 30px); */
     /* margin: 0 0px 0 30px; */
@@ -42,6 +42,10 @@ nav .navbar a {
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     padding: 5px 20px;
+}
+
+nav .navbar a.current{
+    color: var(--current);
 }
 
 nav a:hover, nav a:focus {

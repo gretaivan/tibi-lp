@@ -1,19 +1,8 @@
-:root {
-    --gutter-x: 20px;
-    --header-color: #BA5277;
-    --content-fonts: 'Lora', serif;
-    --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem */
-    --dark: #503088;
-    --primary: #FE018A;
-    --secondary-background: #F8EEF1;
-    --lightest-pink: #FFFBFC;
-    --darkest-purple: #1B1030;
-  }
-  
-  main {
+@import url(./style.css);
+
+main {
     margin-top: 80px;
 }
-  
 
 .arrows {
     width: 40px;
@@ -24,7 +13,7 @@
 }
 
 .arrows path {
-    stroke: var(--dark);
+    stroke: var(--lightest-pink);
     fill: transparent;
     stroke-width: 3px;  
     animation: arrow 2s infinite;
@@ -90,6 +79,31 @@ animation-delay:-0.5s;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     height: calc(100vh - 80px);
+    background: linear-gradient(180deg, var(--lightest-purple) 0%, var(--darkest-purple) 100%);
+}
+
+.intro-container #slogans{ 
+    font-size: 96px;
+    grid-column: 2 / span 9;
+    grid-row: 2 / span 3;
+}
+.intro-container #slogans h2{ 
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+    color: var(--lightest-pink);
+    font-family: 'Roboto', sans-serif;
+    text-transform:uppercase;
+    letter-spacing: -1px;
+    max-width: 931.5px;
+}
+
+.intro-container #slogans h3{ 
+    font-size: 1.3rem;
+    text-align: right;
+    color: var(--lightest-pink);
+    font-family: 'Roboto', sans-serif;
+    /* text-transform:uppercase; */
+    max-width: 931.5px;
 }
 
 
@@ -97,24 +111,20 @@ animation-delay:-0.5s;
     grid-column: 6;
 }
 
-#slogans{
-    grid-column: 1 / 7;
-    grid-row: 2 / 4;
-    justify-self: center;
-}
 
 .intro-container button{
-    grid-row: 6;
-    align-self: flex-start;
-    justify-self:center;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self:stretch;
 }
 
 .intro-container .btn-user-l {
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 4;
 }
 .intro-container .btn-secondary{
     grid-column: 3 / 6;
-    align-self: center;
+    grid-row: 6 / span 1; 
+    align-self: flex-start;
     justify-self: flex-end;
 }
 
@@ -129,13 +139,14 @@ animation-delay:-0.5s;
 }
 
 .intro-container .btn-partner{
-    grid-column: 9 / 11
+    grid-column: 8 / span 4;
 }
 
 .intro-backdrop{
     grid-column: 7 / 13;
     grid-row: 1 / 7;
-    background-color: var(--secondary-background); 
+    /* background-color: var(--secondary-background);  */
+    
 }
 
 
@@ -251,7 +262,7 @@ animation-delay:-0.5s;
 }
 
 .card h2{
-    color: var(--primary);
+    color: var(--highlight);
     margin-bottom: 60px;
 }
 .card h3{
