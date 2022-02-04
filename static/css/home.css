@@ -160,11 +160,14 @@ animation-delay:-0.5s;
 
 @media screen and (max-width: 1082px){
     .intro-container .btn-user-l{
-        grid-column: 2 / span 4;
+        /* grid-column: 2 / span 4; */
+        grid-column: 5 / span 4;
     }
     .intro-container .btn-secondary{
-        grid-column: 3 / span 4;
-        margin-right: 5%;
+        /* grid-column: 3 / span 4; */
+         /* margin-right: 5%; */
+        grid-column: 6 / span 4;
+       
     }
 }
 
@@ -457,33 +460,64 @@ animation-delay:-0.5s;
     }
 } */
 
+/* @media screen and (max-width: 600px){
+
+    
+    .intro-container #slogans{ 
+        font-size: 96px;
+        grid-column: 2 / span 10;
+        grid-row: 1 / span 4;        
+    }
+
+    .intro-container #slogans h2{ 
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        
+    }
+    
+    .intro-container #slogans h3{ 
+        font-size: 1rem;
+        text-align: right;
+        margin-left: 20%;
+        max-width: 80%;
+    }
+
+    .intro-container #slogans h3:last-child{ 
+        margin-left: 0;
+        max-width: 100%;
+
+    }
+} */
+
 @media screen and (max-width: 540px){
-    html, body {
+    html, body, * {
         max-width: 100vw;
     }
 
     .intro-container #slogans{ 
         font-size: 96px;
         grid-column: 2 / span 10;
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 4;        
     }
+
     .intro-container #slogans h2{ 
-        font-size: 2rem;
-        margin-bottom: 50px;
-        max-width: 931.5px;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        
     }
     
     .intro-container #slogans h3{ 
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: right;
-        color: var(--lightest-pink);
-        font-family: 'Roboto', sans-serif;
-        /* text-transform:uppercase; */
-        max-width: 931.5px;
+        margin-left: 20%;
+        max-width: 80%;
     }
 
+    .intro-container #slogans h3:last-child{ 
+        margin-left: 0;
+        max-width: 100%;
 
-
+    }
 
     .centered-wrapper{
         width: 90%;
