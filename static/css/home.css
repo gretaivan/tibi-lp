@@ -332,14 +332,12 @@ animation-delay:-0.5s;
     margin: 0 5% 160px;
 } 
 
-/*
-
-.voices div{
-    border: 1px solid black;
-    height: 250px;
-    width: 250px;
-    flex: 1 0 33%;
+/* .voices h3{
+    display: block;
+    width: 100%;
+    text-align: center;
 } */
+
 
 .voices .container {
     position: relative;
@@ -377,13 +375,13 @@ animation-delay:-0.5s;
   
   .text {
     color: var(--lightest-pink);
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-10%, -50%);
     text-align: center;
   }
 
@@ -434,6 +432,14 @@ animation-delay:-0.5s;
     .voices{
         margin: 0;
     }
+
+    .voices .container {
+        flex: 1 0 49%;
+      }
+
+      .text {
+        font-size: 18px;
+      }
 }
 
 /* @media screen and (max-width: 540px){
@@ -465,11 +471,9 @@ animation-delay:-0.5s;
     .mission-pt2 .card:nth-child(4){
         padding-top: 100px;;
     }
-    .voices div{
-        border: 1px solid black;
-        height: 150px;
-        width: 250px;
-        flex: 1 0 33%;
-    }
+
+    .voices .container {
+        flex: 1 0 100%;
+      }
 }
 
