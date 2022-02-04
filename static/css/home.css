@@ -119,10 +119,12 @@ animation-delay:-0.5s;
 }
 
 .intro-container .btn-user-l {
-    grid-column: 2 / span 4;
+    /* grid-column: 2 / span 4; */
+    grid-column: 5 /span 4;
 }
 .intro-container .btn-secondary{
-    grid-column: 3 / 6;
+    /* grid-column: 3 / 6 */
+    grid-column: 6 /span 4;
     grid-row: 6 / span 1; 
     align-self: flex-start;
     justify-self: flex-end;
