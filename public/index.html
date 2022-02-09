@@ -17,6 +17,7 @@
     <!-- <script defer src="./bundle.js"></script> -->
     <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bundle.js"></script>
   </head>
 
 <body>
@@ -286,23 +287,19 @@ make lasting change for our children and our children’s children.
         
         
     </footer>
-
-    
-
-  <script src="static/js/index.js"></script>    
-  <script>
-    function toogleNav() {
-      const x = document.getElementById("toggler-nav");
-      const toggler = document.getElementsByClassName("nav-icon")[0];
-      
-      if (x.className === "toggler-nav") {
-        x.className += " responsive";
-        toggler.className += " open";
-      } else {
-        x.className = "toggler-nav";
-        toggler.className = "nav-icon";
+    <script>
+      function toogleNav() {
+        const x = document.getElementById("toggler-nav");
+        const toggler = document.getElementsByClassName("nav-icon")[0];
+        
+        if (x.className === "toggler-nav") {
+          x.className += " responsive";
+          toggler.className += " open";
+        } else {
+          x.className = "toggler-nav";
+          toggler.className = "nav-icon";
+        }
       }
-    }
   </script>
 </body>
 </html>

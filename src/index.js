@@ -1,4 +1,10 @@
+import AOS  from 'aos';
+const server = 'http:localhost:3000';
+const request = require('./requests')
+
+
 AOS.init();
+
 // const main = document.querySelector('main');
 
 // const publicRoutes = ['#', 'contact-us'];
@@ -10,22 +16,11 @@ subscribeForm.addEventListener('submit', subscribe);
 
 async function subscribe(e){ 
     e.preventDefault(); 
+    
 
-    try{
-        const options = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json'},
-            body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
-        }
-        alert("Not a magician - subscription functionality is under construction, but I can tell that your input was : " + options.body); 
+    const resData = request.post(server, Object.fromEntries(new FormData(e.target))); 
 
-        const res = await fetch(urlPath, options);
-        const resData = await res.json(); 
-
-    } catch(err) {
-        console.log(err); 
-    }
-
+    alert("Not a magician - subscription functionality is under construction, but I can tell that your input was : " + resData); 
 }
 
 // window.addEventListener('hashchange', updateContent);
