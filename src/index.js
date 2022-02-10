@@ -23,6 +23,37 @@ async function subscribe(e){
     alert("Not a magician - subscription functionality is under construction, but I can tell that your input was : " + resData); 
 }
 
+
+
+//mock animation
+var countDownDate = new Date("Jul 1, 2022 12:00:00").getTime();
+var x = setInterval(function() {
+    let now = new Date().getTime();
+    let timeLeft = countDownDate - now;
+    
+    let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (timeLeft < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "We Are Live!";
+    }
+}, 1000);
+
+
+// function showInfo(e) {
+//     console.log(e);
+//     popup.classList.toggle("show");
+
+// }
+
 // window.addEventListener('hashchange', updateContent);
 // window.addEventListener('load', updateContent);
 

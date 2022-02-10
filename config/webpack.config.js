@@ -13,6 +13,16 @@ const config = {
     publicPath: '/', // specifies the base path for all the assets within your application.
   },
   mode: 'development', // tells webpack to use its built-in optimizations according to the mode
+
+  // devServer: {
+  //   allowedHosts: [
+  //     'host.com',
+  //     'subdomain.host.com',
+  //     'subdomain2.host.com',
+  //     'host2.com',
+  //   ],
+  // },
+
   resolve: {
     // instructions on how to resolve modules
     modules: [path.resolve('node_modules'), 'node_modules'], // tells webpack where to look for node_modules
@@ -26,6 +36,7 @@ const config = {
     new HtmlWebpackPlugin({
       // used to add the JavaScript code to the HTML
       template: path.join(PUBLIC_DIRECTORY, 'index.html'),
+      // favicon: "./dist/favicon.ico"
     }),
   ],
   module: {

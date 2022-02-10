@@ -79,7 +79,13 @@ animation-delay:-0.5s;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     height: calc(100vh - 80px);
-    background: linear-gradient(180deg, var(--lightest-purple) 0%, var(--darkest-purple) 100%);
+    /* background: linear-gradient(180deg, var(--lightest-purple) 0%, var(--darkest-purple) 100%); */
+    /* background-image: url(../images/intro-backgrd.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: border-box; */
+    
 }
 
 .intro-container #slogans{ 
@@ -131,13 +137,19 @@ animation-delay:-0.5s;
 }
 
 .intro-img{
-    margin: 40px 0;
-    grid-column: 8 / 12;
-    grid-row: 1 / 6;  
-    background-image: url("");
+    position: absolute;
+    margin: -80px 0;
+    z-index: -10;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/intro-backgrd.png');
+    /* grid-column: 0 / 12; */
+    /* grid-row: 0 / 6;   */
+    /* background-image: url(""); */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 
 .intro-container .btn-partner{
@@ -323,6 +335,69 @@ animation-delay:-0.5s;
     text-align: center;
     margin-bottom: 20px;
 }
+
+.app-prev{
+    margin-top: 200px;
+    display: flex;
+    flex-flow: column no-wrap;
+}
+.app-prev > div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mock-app{
+    width: 300px;
+    margin: 0  auto;
+}
+
+.mock-app img{
+    width: 300px;
+}
+
+#development-progress {
+    position: absolute;
+    width: 140px;
+    /* background-color: #ddd; */
+    border: 1px white solid;
+    border-radius: 5px;
+    margin: 120px  auto 0 48px;
+    transform: rotate(-12deg);
+}
+
+#progress-val {
+    width: 10%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+p#countdown{
+    position: absolute;
+    /* color:white; */
+    transform: rotate(-12deg);
+    margin: 20px  auto 0 37px;
+    color: white;
+}
+
+  
+
+
+.app-prev h2,.app-prev p {
+    width: 90%;
+    margin: 0 auto 0 0 ;
+}
+
+.app-prev h2 {
+    margin-bottom: 30px;
+} 
+.app-prev p {
+    margin-bottom: 10px;;
+}
+
 
 .empower-container .container-pt1{
     padding: 210px 0 170px 0;

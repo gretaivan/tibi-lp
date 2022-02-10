@@ -9,7 +9,8 @@ then mobile, then wide screens, flow: parent to child */
 }
 
 header {
-    background-color: var(--lightest-purple);
+    /* background-color: var(--lightest-purple) 1%; */
+    
     order: 1;
     position: fixed;
     height: 80px;
