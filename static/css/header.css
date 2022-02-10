@@ -1,6 +1,7 @@
 /* organised code according the dekstop, 
 then mobile, then wide screens, flow: parent to child */
 @import url(./style.css);
+ 
 
 :root{
     --text-color: var(--lightest-pink);
@@ -10,7 +11,8 @@ then mobile, then wide screens, flow: parent to child */
 
 header {
     /* background-color: var(--lightest-purple) 1%; */
-    
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
     order: 1;
     position: fixed;
     height: 80px;
@@ -37,17 +39,22 @@ nav .navbar {
 }
 
 nav .navbar a {
+    font-family: Neon; 
     display: block;
     /* padding: 0.5rem 1rem; */
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     padding: 5px 20px;
+    padding-right: 40px; 
 }
 
-nav .navbar a.current{
-    color: var(--current);
+nav .navbar li:first-child {
+    padding-right: 40px;
 }
+/* nav .navbar a.current{
+    color: var(--current);
+} */
 
 nav a:hover, nav a:focus {
     color: var(--highlight);
@@ -55,18 +62,18 @@ nav a:hover, nav a:focus {
     font-weight: 600;
   }
 
-header li:first-child, header li:nth-child(5){
+/* header li:first-child, header li:nth-child(5){
     border-right: var(--text-color) 1px solid;
     padding-right: var(--link-padding);
-}
+} */
 
-header li:nth-child(2) {
+/* header li:nth-child(2) {
     padding-left: var(--link-padding);
-}
+} */
 
-header li:first-child, header li:last-child{
+/* header li:first-child, header li:last-child{
     font-weight: 600;
-}
+} */
 
 .nav-icon {
     display: none;

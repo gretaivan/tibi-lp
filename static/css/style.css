@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 @import url('./header.css');
 @import url('./footer.css');
+@font-face {
+  font-family: Neon;
+  src: URL('../neon_80s/Neon.ttf') format('truetype');
+}
 
 :root {
     --gutter-x: 20px;
@@ -10,7 +14,7 @@
     --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem*/
     --dark: #503088;
     --highlight: #FE018A;
-    --partner-color: #0B654B;
+    --partner-color: #FCC45A;
     --darkest-purple: #1B1030;
     --lightest-purple: #9EA3F7;
     --lightest-pink: #FFFBFC;
@@ -156,39 +160,40 @@ section a:hover::after{
 }
 
 button{
-  font-family: 'Rubik', sans-serif;
+  font-family: Neon;
   background-color: inherit;
   text-align: center;
   border: none;
   cursor: auto;
+  color: white;
   
 }
 
 .btn-standard {
-  font-size: 20px;
-  border: 2px solid var(--highlight);
-  border-radius: 10px;
+  font-size: 1.3rem;
+  border: 2px solid white;
+  border-radius: 15px;
   padding: 5px 10px;
-  letter-spacing: 1px;
-  font-weight: 100;
+  /* letter-spacing: 1px; */
+  /* font-weight: 100; */
 }
 
-.btn-partner{
-  /* -webkit-text-stroke-color: var(--partner-color);
-  -webkit-text-fill-color: white; */
+/* .btn-partner{
+
   border: 2px solid var(--partner-color);
   color: var(--partner-color);
   letter-spacing: 0px;
   filter: drop-shadow(0px 9px 4px rgba(11, 101, 75, 0.3));
-}
+} */
 
-.btn-user-l{
-  -webkit-text-fill-color: var(--highlight);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  background-color: var(--highlight);
-  filter: drop-shadow(0px 9px 4px rgba(254, 1, 138, 0.25));
-}
+/* .btn-user-l{ */
+  
+  /* -webkit-text-fill-color: var(--highlight); */
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: white; */
+  /* background-color: var(--highlight); */
+  /* filter: drop-shadow(0px 9px 4px rgba(254, 1, 138, 0.25)); */
+/* } */
 
 
 .btn-secondary{
@@ -212,6 +217,7 @@ button:hover{
   padding-left:8px;
   cursor: pointer;
   transition: 0.5s;
+  background-color: var(--highlight);
 }
 
 button:hover:after {

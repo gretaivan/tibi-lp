@@ -5,7 +5,7 @@
     <title>Let's Flock</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- SEO -->
-    <meta name="description" content="A product to a women safety" />
+    <meta name="description" content="Creating safer public spaces by connecting and empowering women, trans women, female allies of lgbtq community." />
      <!-- whatever is our main page -->
     <link rel="canonical" href="" />
     <link rel="shortcut icon" type="image/jpg" href="/static/images/flaticon.png"/>
@@ -18,25 +18,27 @@
     <script defer src="./bundle.js"></script>
     <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="bundle.js"></script>
+    <!-- <script src="bundle.js"></script> -->
   </head>
 
 <body>
     <header>
-      <img src="./static/images/FLOCK.png" id="logo-icon" style="height:100%;">
+      <nav id="toggler-nav">
+        <ul id="menu-list" class="navbar">
+            <li><a href="partners.html" style="color:var(--partner-color);">Partners</a></li>
+            <li><a href="index.html" class="current">Home</a></li>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#subscribe" >Join the Flock</a></li>
+        </ul>
+      </nav>
+
+      <img src="./static/images/FLOCK.png" id="logo-icon" style="height:80px ;">
       <a href="javascript:void(0);" class="nav-icon" onclick="toogleNav()">
         <i class="fas fa-bars fa-lg"></i>
       </a>
-      <nav id="toggler-nav">
-          <ul id="menu-list" class="navbar">
-              <!-- <li><a href="partners.html" style="color:var(--partner-color);">Partners</a></li> -->
-              <li><a href="index.html" class="current">Home</a></li>
-              <!-- <li><a href="about.html">About Us</a></li> -->
-              <!-- <li><a href="blog.html">Blog</a></li> -->
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="#subscribe" >Join the Flock</a></li>
-          </ul>
-      </nav>
+      
     </header>
 
     <main>  
@@ -44,20 +46,23 @@
     <section class="intro-container">
       <div class="intro-img"></div>
         <div id="slogans">
-          <h2>Life is not a fairy  tale. if you lose your shoe at midnight - I can't bring you back your shoe, but I can offer you my company</h2>
-         
+          <img src="./static/images/neon-slogan.png">
+          <!-- <h2>Life is not a fairy  tale. if you lose your shoe at midnight - I can't bring you back your shoe, but I can offer you my company</h2>
+          
           <h3>Safety is no question of gender. Our Bodies our Streets.</h3>
-          <h3>Feel empowered and go with the Flock</h3>
+          <h3>Feel empowered and go with the Flock</h3> -->
+          <h3>safety should be <br>no question of gender</h3>
+          <h3>help to fix the status quo</h3>
         </div>
 
         <button class="btn-standard btn-user-l" onClick="document.getElementById('subscribe').scrollIntoView();">
-          Join the Flock!
+          RAISE YOUR VOICE
         </button>
 
-        <button class="btn-secondary" onClick="document.getElementById('subscribe').scrollIntoView();">
+        <!-- <button class="btn-secondary" onClick="document.getElementById('subscribe').scrollIntoView();"> -->
           <!-- (i) pottentially a hover over with explanation -->
-          get an early access to the app... (i)
-        </button>
+          <!-- get an early access to the app... (i) -->
+        <!-- </button> -->
       
       
         <svg class="arrows">

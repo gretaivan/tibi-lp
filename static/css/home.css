@@ -91,8 +91,15 @@ animation-delay:-0.5s;
 .intro-container #slogans{ 
     font-size: 96px;
     grid-column: 2 / span 9;
-    grid-row: 2 / span 3;
+    grid-row: 2 / span 2;
+    /* margin-top: 60px; */
 }
+
+#slogans img{
+    width: 800px;
+}
+
+
 .intro-container #slogans h2{ 
     font-size: 2.6rem;
     margin-bottom: 50px;
@@ -104,12 +111,14 @@ animation-delay:-0.5s;
 }
 
 .intro-container #slogans h3{ 
+    font-family: Neon; 
     font-size: 1.3rem;
-    text-align: right;
+    text-align: left;
     color: var(--lightest-pink);
-    font-family: 'Roboto', sans-serif;
+    width: 300px;
     /* text-transform:uppercase; */
     max-width: 931.5px;
+    padding-bottom: 20px;
 }
 
 
@@ -118,15 +127,21 @@ animation-delay:-0.5s;
 }
 
 
-.intro-container button{
+/* .intro-container button{
     grid-row: 5 / 6;
     align-self: center;
     justify-self:stretch;
-}
+} */
 
 .intro-container .btn-user-l {
     /* grid-column: 2 / span 4; */
-    grid-column: 5 /span 4;
+    /* grid-column: 5 /span 4; */
+    grid-row: 6; 
+    grid-column: 2;
+    align-self: flex-start;
+    margin-top: -50px;
+    height: 86px;
+    width: 280px;
 }
 .intro-container .btn-secondary{
     /* grid-column: 3 / 6 */
