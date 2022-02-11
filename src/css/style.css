@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600;700&family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-@import url('./header.css');
-@import url('./footer.css');
+/* @import url('./header.css'); */
+/* @import url('./footer.css'); */
 
 :root {
     --gutter-x: 20px;

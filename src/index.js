@@ -1,6 +1,16 @@
 import AOS  from 'aos';
+import './css/style.css';
+import './css/header.css';
+import './css/footer.css';
+import './css/home.css';
+import './images/yellowcircle.png';
+import './images/community.png';
+import './images/FLOCK.png';
+
+
 const server = 'http:localhost:3000';
 const request = require('./requests')
+
 
 
 AOS.init();
