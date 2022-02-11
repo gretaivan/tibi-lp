@@ -10,7 +10,7 @@ const config = {
     // instructions for compiling the code
     path: path.resolve(ROOT_DIRECTORY, 'dist'), // the file where the compiled code should go
     filename: 'bundle.js', // the file name of the compiled code
-    publicPath: '/dist', // specifies the base path for all the assets within your application.
+    publicPath: '/dist/', // specifies the base path for all the assets within your application.
   },
   mode: 'development', // tells webpack to use its built-in optimizations according to the mode
 
