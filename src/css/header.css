@@ -2,15 +2,15 @@
 then mobile, then wide screens, flow: parent to child */
 @import url(./style.css);
 
-:root{
+
+/* :root{
     --text-color: var(--lightest-pink);
     --link-padding: 15px;
     --current: #321F52;
-}
+} */
 
 header {
     /* background-color: var(--lightest-purple) 1%; */
-    
     order: 1;
     position: fixed;
     height: 80px;
@@ -43,6 +43,7 @@ nav .navbar a {
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     padding: 5px 20px;
+    /* font-family: Neon; */
 }
 
 nav .navbar a.current{

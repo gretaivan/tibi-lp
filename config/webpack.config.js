@@ -5,12 +5,13 @@ const ROOT_DIRECTORY = path.join(__dirname, '../'); // the root of your project
 const PUBLIC_DIRECTORY = path.join(ROOT_DIRECTORY, 'public'); // the root of the frontend, i.e. html file
 
 const config = {
-  entry: [path.resolve(ROOT_DIRECTORY, './src/index.js')], // the main JavaScript file of the project
+  entry: {index: './src/index.js'},//[path.resolve(ROOT_DIRECTORY, 'src/index.js')], // the main JavaScript file of the project
   output: {
     // instructions for compiling the code
     path: path.resolve(ROOT_DIRECTORY, 'dist'), // the file where the compiled code should go
-    filename: 'bundle.js', // the file name of the compiled code
-    publicPath: '/dist/', // specifies the base path for all the assets within your application.
+    filename: '[name].bundle.js', // the file name of the compiled code
+    clean: true,
+    publicPath: '/', // specifies the base path for all the assets within your application.
   },
   mode: 'development', // tells webpack to use its built-in optimizations according to the mode
 
@@ -35,8 +36,9 @@ const config = {
     // plugins we are using to help with compiling
     new HtmlWebpackPlugin({
       // used to add the JavaScript code to the HTML
+      title: 'Output Management',
       template: path.join(PUBLIC_DIRECTORY, 'index.html'),
-      // favicon: "./dist/favicon.png"
+      favicon: "./dist/images/favicon.png"
     }),
   ],
   module: {
@@ -58,7 +60,7 @@ const config = {
       },
      
       {
-        test: /\.(png|svg|jpg|gif|pdf)$/,
+        test: /\.(png|svg|jpg|gif|pdf|ico)$/,
         use: [
           {
             loader: 'file-loader',
@@ -69,6 +71,18 @@ const config = {
           }
         ]
       }, // transpile image files
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }// transpile fonts
+        ]
+      }
     ],
   },
 };

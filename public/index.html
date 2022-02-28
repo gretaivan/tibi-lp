@@ -5,306 +5,37 @@
     <title>Let's Flock</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- SEO -->
-    <meta name="description" content="A product to a women safety" />
+    <link rel="shortcut icon" type="image/jpg" href="./dist/favicon.ico"/>
+    <meta name="description" content="A product for women's safety" />
      <!-- whatever is our main page -->
     <link rel="canonical" href="" />
-    <!-- static -->
-    <!-- <link rel="stylesheet" href="../src/css/style.css">  -->
-    <!-- <link rel="stylesheet" href="static/css/home.css">  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="shortcut icon" type="image/jpg" href="/static/images/logo.png"/> -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <!-- <script defer src="./bundle.js"></script> -->
-    <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="./dist/bundle.js"></script> -->
+    <style>
+      @font-face {  
+        font-family: Neon;
+        src: URL('../fonts/Neon.ttf');
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script> -->
   </head>
 
 <body>
     <header>
-      <img src="./dist/images/FLOCK.png" id="logo-icon" style="height:100%;">
-      <a href="javascript:void(0);" class="nav-icon" onclick="toogleNav()">
-        <i class="fas fa-bars fa-lg"></i>
-      </a>
-      <nav id="toggler-nav">
-          <ul id="menu-list" class="navbar">
-              <!-- <li><a href="partners.html" style="color:var(--partner-color);">Partners</a></li> -->
-              <li><a href="index.html" class="current">Home</a></li>
-              <!-- <li><a href="about.html">About Us</a></li> -->
-              <!-- <li><a href="blog.html">Blog</a></li> -->
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="#subscribe" >Join the Flock</a></li>
-          </ul>
-      </nav>
+      <img src="./images/FLOCK.png" id="logo-icon" style="height:100%;" />
+      <h1>JOIN THE FLOCK</h1>
+      <img src="./images/bring-back-the-sass.png" class="slogan">
     </header>
 
     <main>  
-    
-    <section class="intro-container">
-      <div class="intro-img"></div>
-        <div id="slogans">
-          <h2>Life is not a fairy  tale. if you lose your shoe at midnight - I can't bring you back your shoe, but I can offer you my company</h2>
-         
-          <h3>Safety is no question of gender. Our Bodies our Streets.</h3>
-          <h3>Feel empowered and go with the Flock</h3>
-        </div>
-
-        <button class="btn-standard btn-user-l" onClick="document.getElementById('subscribe').scrollIntoView();">
-          Join the Flock!
-        </button>
-
-        <button class="btn-secondary" onClick="document.getElementById('subscribe').scrollIntoView();">
-          <!-- (i) pottentially a hover over with explanation -->
-          get an early access to the app... (i)
-        </button>
       
-      
-        <svg class="arrows">
-          <path class="a1" d="M0 0 L20 12 L40 0"></path>
-          <path class="a2" d="M0 15 L20 27 L40 15"></path>
-          <path class="a3" d="M0 30 L20 42 L40 30"></path>
-          <path class="a4" d="M0 45 L20 57 L40 45"></path>
-          <!-- <path class="a5" d="M0 60 L20 72 L40 60"></path> -->
-        </svg>
-   
-      <!-- <div class="intro-backdrop"></div>
-         -->
+      <p class="intro">safety should be <br>no question of gender.</p> 
+      <p class="intro">help to fix the status quo!</p>
 
-        
-        <!-- <button class="btn-standard btn-partner" onclick="location.href='/partners';">Become business ally!</button> -->
-    </section>
-    
-
-    <section  class="problem-container xxl-cont">
-
-      <div class="card">
-        <h2>
-          90%
-        </h2>
-        <h3>
-          women feel unsafe in public spaces
-        </h3>
-      </div> 
-
-     <div class="card">
-        <h2>
-          71%
-        </h2>
-        <h3>
-          experienced sexual harassment in a public space
-        </h3>
-      </div>
-
-      <div class="card">
-        <h2>
-          5%
-        </h2>
-        <h3>
-          had experienced rape attempts since the age of 16
-        </h3>
-      </div>
-
-     
-
-      <div class="card">
-        <h2>
-          81%
-        </h2>
-        <h3>
-          of women restrict their behaviours due to the fear</h3>
-      </div>
-    </section>
-
-
-    <section class="mission-container ">
-      <div class="container-pt1 xxl-cont">
-
-        <div class="centered-wrapper">
-        <img src="./yellowcircle.png" />
-        <h2>
-          Maybe one person can’t change the world, <br> but two  - sure can! <br>Tell street harassment to Flock Off
-        </h2>
-      
-        <!-- <a href="/about">Read more...</a> -->
-        </div>
-
-      </div>
-      <div class="mission-pt2">
-        <div class="card " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" >
-          <img src="./community.png" alt="Power of community, share the love"/>
-          <h3>Community</h3>
-          <p>We believe in the power of community.
-            Flock Off is a community space for Women and Non-binary people to
-            share their frustration and despair at the senseless violence we 
-            continue to see against us as we simply try to walk home at night.</p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="100">
-          <img src="./static/images/innovation.png" alt="Using technology for good"/>
-          <h3>Technology for good</h3>
-          <p>
-            We believe in using technology for good. 
-Love it or hate it, technology is an integral part of our daily lives. 
-Smart phones are becoming more affordable and accessible, and we
-believe that this provides a unique opportunity to help change how 
-safe we feel on our streets.
-          </p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-          <img src="./static/images/global-network.png" alt="international team" />
-          <h3>Global?</h3>
-          <p>
-            We believe in in embracing globalisation. 
-Our international team come from multiple countries with diverse 
-career backgrounds, but we are united by a shared feeling of 
-despair at seeing the same stories of rape, violence and harassment
-trending in each of our countries. This is an issue that affects us 
-ALL, and that is why we must work together to solve it.
-          </p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="300">
-          <img src="./static/images/gender-fluid.png" alt="gender-fluid" />
-          <h3>Equality? </h3>
-          <p>
-            We believe in Co-operation.
-Just like Flock Off is about ordinary women and non-binary people 
-(you and me), taking the power back into our own hands- it is also 
-for businesses who care about their female and N-B customers. We 
-can’t do this alone. We need us all to come together if we are to 
-make lasting change for our children and our children’s children.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <section class="app-prev xxl-cont">
-      <div data-aos="zoom-out-up"
-        data-aos-anchor-placement="top-bottom"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
-        <div class="mock-app">
-          
-          <div id="development-progress">
-            <div id="progress-val"></div>
-          </div>
-          <p class="timer" id="countdown"></p>
-          <img src="./static/images/app.png" >
-        </div>
-      </div>
-      <div data-aos="zoom-out-down"
-      data-aos-anchor-placement="top-bottom"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
-        <h2>
-          A safer way home · App tailored for our community not a crowd
-        </h2>
-        <p>In a world where safety levels defer to one's gender,  for <span class="txt-highlight flinta popup">FLINTA*</span> became a standard to adopt fearful and avoidant behaviours and use technologies that alert relatives or authorities once an accident has happened. Is this a status quo you want to pursue? Then read no further...</p>
-        <p>At FLOCK, we believe that this is incorrect. It is time to challenge and fix the status quo. We want to put the power back in individual hands who wish to make a difference. FLOCK APP strives to build an empowered community, erase the fear from our users and bring them home safely. WARNING: A new friendship may form.</p>
-        <p>Join the Flock to keep up with the events and do not forget to check the box if you would like to get early access to an app and contribute with the feedback.</p>
-        </p>
-      </div>
-    </section>
-
-    <section class="empower-container xxl-cont">
-      <div class="container-pt1">
-        <div class="centered-wrapper">
-          <h2>
-            Get Empowered<br>
-            and and blah blah blah blah
-          </h2>
-        
-          <!-- <a href="/blog">Check out our blog...</a> -->
-        </div>
-      </div>
-    </section>
-     
-    <section class="voices xxl-cont">
-
-      <div class="container">
-        <img src="./static/images/Verena.jpg" alt="Verena" class="voices-img">
-        <div class="overlay">
-          <div class="text">"I always have this worst-case scenario in my head: what if?" <br/>- Verena</div>
-        </div>
-      </div>
-      <div class="container">
-        <img src="./static/images/Jojo.jpg" alt="Verena" class="voices-img">
-        <div class="overlay">
-          <div class="text">"If I have an uncomfortable feeling because someone is walking behind me, I stop and let the person pass. That way I can regain control over the situation." <br/>- Johanna </div>
-        </div>
-      </div>
-      <div class="container">
-        <img src="./static/images/Melanie.jpg" alt="Verena" class="voices-img">
-        <div class="overlay">
-          <div class="text">"As soon as I get off the train, I take my key in my hand so that I feel safer - even during the day. Everyone should behave in a way that does not intimidate other people!" <br/>- Melanie</div>
-        </div>
-      </div>
-        <div class="container">
-          <img src="./static/images/Anni.jpg" alt="Annina" class="voices-img">
-          <div class="overlay">
-            <div class="text">"I wish my fear would be taken seriously and ridiculed less." <br/>- Annina</div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./static/images/Svenja.jpg" alt="Verena" class="voices-img">
-          <div class="overlay">
-            <div class="text">"I don't want to accept this fear anymore. It's time to free myself from powerlessness and make a change!" <br/>- Svenja</div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./static/images/Kati.jpg" alt="Verena" class="voices-img">
-          <div class="overlay">
-            <div class="text">"We're living in the 21 Century - it is unacceptable that FLINTA feel like this! I don't want to have my freedom taken away!" <br/>- Kati</div>
-          </div>
-        </div>
-    
-
-    </section>
-
-        
-
+      <button class="intro h1">RAISE YOUR VOICE</button>
     </main>
-
-    <footer class="xxl-cont">
-      <div>
-        <!-- <div id="social-media">
-          <img src="static/images/Facebook.png">
-          <img src="static/images/Instagram.png">
-          <img src="static/images/Google.png">
-       </div> -->
-        <ul> 
-          <li><img src="static/images/Facebook.png">
-            <img src="static/images/Instagram.png">
-            <img src="static/images/Google.png"></li>  
-          <li> <a href="/contact-us">Contact Us</a></li>
-          <li> <a href="partners.html">Sponsor or Volunteer</a></li>       
-          <li> <a href="/about#team">Team</a></li>  
-          <li><a href="/policy">Privacy Policy</a></li>
-          <li class="shrink-p"><a href="/copyright">Copyright © tbc 2022. All rights reserved.</a></li>
-       </ul>
-
-      </div>
-      <div>
-        <h2 class="pointer">Join here</h2>
-        <img class="pointer pointing-arrow" src="./static/images/arrow.png" alt="pointing arrow to the form"/>
-        <form id="subscribe">
-          <label for="name">Your name</label>
-          <input type="text"  id ="name" name="name" placeholder="Name">
-          <label for="email">Your email address</label>
-          <input type="email" id="email" name="email" placeholder="Email">
-          <input type="checkbox" id="tester" name="tester">
-          <label for="tester">I want an early access to the app<br> and contribute with my feedback</label>
-          <input type="checkbox" id="policy" name="policy">
-          <label for="policy">Please view the Data Protection<br>and Privacy Policy</label>
-         
-          <input type="submit" value="Submit">
-      </form>
-      </div>   
-      <div>
-        <h2>Become a member</h2>
-        <p>Help us to make streets safer to you and others and empower you. Feeling generous? Become a tester - get 
-          an early access to the app and help is tailor it to your and the community needs.</p>
-          <p class="highlighted">Make a difference today...</p>
-      </div>
-       
-        
-        
-    </footer>
-    <script>
+    
+    
+    <!-- <script>
       function toogleNav() {
         const x = document.getElementById("toggler-nav");
         const toggler = document.getElementsByClassName("nav-icon")[0];
@@ -317,6 +48,6 @@ make lasting change for our children and our children’s children.
           toggler.className = "nav-icon";
         }
       }
-  </script>
+  </script> -->
 </body>
 </html>

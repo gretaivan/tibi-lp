@@ -1,19 +1,25 @@
-import AOS  from 'aos';
+// import AOS  from 'aos';
+import './neon_80s/Neon.ttf';
 import './css/style.css';
-import './css/header.css';
-import './css/footer.css';
-import './css/home.css';
-import './images/yellowcircle.png';
-import './images/community.png';
+// import './css/header.css';
+// import './css/footer.css';
+// import './css/home.css';
+// import './images/yellowcircle.png';
+// import './images/community.png';
 import './images/FLOCK.png';
+import './images/favicon.png';
+import './images/bring-back-the-sass.png';
+
 
 
 const server = 'http:localhost:3000';
 const request = require('./requests')
 
+// AOS.init();
 
 
-AOS.init();
+
+
 
 // const main = document.querySelector('main');
 

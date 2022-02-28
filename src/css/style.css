@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600;700&family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600;700&family=Rubik:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap'); */
 /* @import url('./header.css'); */
 /* @import url('./footer.css'); */
 
+
 :root {
-    --gutter-x: 20px;
+    --content-fonts: Neon; /* 'Lora', serif; */
+    --text-color: white;
+    --text-size: 1.5rem;
     --header-color: #BA5277;
-    --content-fonts: 'Lora', serif;
+    --big-margin: 35px;
+
+    
     --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem*/
     --dark: #503088;
     --highlight: #FE018A;
@@ -17,18 +22,105 @@
     --secondary-background: #F8EEF1;  
   }
 
+
 * {
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-    max-width: 100vw;
-}
-html{
+  box-sizing: border-box;
   margin: 0; 
   padding: 0;
-  max-width: 100vw;
+} 
+ 
+html {
+  margin: 0; 
+  padding: 0;
 }
 
+header, main {
+  display: flex;
+  flex-flow: column;
+  margin: 0 15px;
+}
+
+body, h1 {
+  font-family: Neon;
+  background-color: black;
+}
+
+h1, .h1 {
+  font-family: Neon;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-size);
+  letter-spacing: 0.05rem;
+  padding-left: 15px;
+  color: var(--text-color);
+  align-self: left;
+}
+
+p {
+  font-size: calc(var(--text-size) / 1.3);
+  width: 100%;
+}
+
+p.intro {
+  margin: 15px 10px; 
+}
+
+#logo-icon {
+  width: 120px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  width: 90%;
+  max-width: 570px;
+  margin: var(--big-margin) 0 ;
+}
+
+.intro {
+  color: var(--text-color);
+}
+
+button {
+  background-color: black;
+  border: 2px solid #FEFEFE;
+  border-radius: 15px;
+  width: 337px;
+  padding: 25px 15px;
+}
+
+button.intro {
+  margin-top: var(--big-margin);
+  align-self: center;
+}
+
+button:hover, button:active {
+  background-color: var(--highlight);
+}
+
+
+
+@media screen and (min-width: 500px){ 
+
+  :root {
+    --text-size: 2rem;
+  }
+
+  .slogan {
+    width: 90%;
+    max-width: 570px;
+    margin: 15px 0;
+  }
+  
+
+  button.intro {
+    align-self: flex-start;
+  }
+
+
+}
+
+/*
 body {
   margin: 0;
   font-family: var(--content-fonts);
@@ -39,12 +131,14 @@ body {
   background-color: var(--lightest-pink);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  max-width: 100vw;
 }
 
 html, body {
   height: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -54,33 +148,33 @@ main {
 }
 footer {
   flex-shrink: 0;
-}
+} */
 
-hr {
+/* hr {
   margin: 1rem 0;
   color: inherit;
   background-color: currentColor;
   border: 0;
   opacity: 0.25;
-}
+} */
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+/* h6, h5, h4,  h3,  h2, h1{
   font-family: var(--header-fonts);
   font-weight: 400;
   margin-bottom: 0.5rem;
   line-height: 1.1; 
   letter-spacing: 0.05rem;
   color: var(--header-color);
-}
+} */
 
-h2 {
+/* h2 {
   font-size: calc(1.6rem + 0.3vw);
 }
 
 h3{
   font-size: calc(1.2rem + 0.3vw);
-}
-
+} */
+/* 
 .txt-highlight{
   color: var(--highlight);
 }
@@ -91,14 +185,13 @@ h3{
 .flinta:hover{
   background-color: var(--highlight);
   color: white;
-}
-
+} */
+/* 
 @media (min-width: 1200px) {
   h2 {
-    /* 32px  */
     font-size: 2rem; 
   }
-  /* 24px  */
+
   h3{
     font-size: 1.5rem;
   }
@@ -116,7 +209,6 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   cursor: pointer;
 }
 
-/* Links */
 a {
   color: var(--darkest-purple);
   text-decoration: underline;
@@ -174,8 +266,6 @@ button{
 }
 
 .btn-partner{
-  /* -webkit-text-stroke-color: var(--partner-color);
-  -webkit-text-fill-color: white; */
   border: 2px solid var(--partner-color);
   color: var(--partner-color);
   letter-spacing: 0px;
@@ -200,7 +290,6 @@ button{
 
 button:after{
   content: ' »';
-  /* content: "\f178"; */
   position: absolute;
   opacity: 0;  
   top: 5px;
@@ -248,4 +337,4 @@ label{
 @media screen and (max-width: 912px){
 
     
-}
+} */
