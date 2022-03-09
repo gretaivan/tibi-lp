@@ -1,4 +1,7 @@
 // import AOS  from 'aos';
+import _ from 'lodash';
+
+console.log(_.join(['Another', 'module', 'loaded!'], ' '));
 import './neon_80s/Neon.ttf';
 import './css/style.css';
 // import './css/header.css';
@@ -9,59 +12,63 @@ import './css/style.css';
 import './images/FLOCK.png';
 import './images/favicon.png';
 import './images/bring-back-the-sass.png';
+import subscribe from './register.js';
+
+const subscribeForm = document.getElementById("subscribe"); 
+subscribeForm.addEventListener('click', subscribe);
 
 
-
-const server = 'http:localhost:3000';
-const request = require('./requests')
+// const server = 'http:localhost:3000';
+// const request = require('./requests');
 
 // AOS.init();
-
-
-
-
 
 // const main = document.querySelector('main');
 
 // const publicRoutes = ['#', 'contact-us'];
 // const privateRoutes = [];
 
-const subscribeForm = document.getElementById("subscribe"); 
-
-subscribeForm.addEventListener('submit', subscribe);
-
-async function subscribe(e){ 
-    e.preventDefault(); 
-    
-
-    const resData = request.post(server, Object.fromEntries(new FormData(e.target))); 
-
-    alert("Not a magician - subscription functionality is under construction, but I can tell that your input was : " + resData); 
-}
 
 
+
+  
+
+//example of spliting entry files
+// if (window.location.pathname === '/feed') {
+//     showLoadingState();
+//     require.ensure([], function() { // this syntax is weird but it works
+//       hideLoadingState();
+//       require('./feed').show(); // when this function is called, the module is guaranteed to be synchronously available.
+//     });
+//   } else if (window.location.pathname === '/profile') {
+//     showLoadingState();
+//     require.ensure([], function() {
+//       hideLoadingState();
+//       require('./profile').show();
+//     });
+//  }
 
 //mock animation
-var countDownDate = new Date("Jul 1, 2022 12:00:00").getTime();
-var x = setInterval(function() {
-    let now = new Date().getTime();
-    let timeLeft = countDownDate - now;
+// var countDownDate = new Date("Jul 1, 2022 12:00:00").getTime();
+// var x = setInterval(function() {
+//     let now = new Date().getTime();
+//     let timeLeft = countDownDate - now;
     
-    let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+//     let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
     
-    // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+//     // Output the result in an element with id="demo"
+//     document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+//     + minutes + "m " + seconds + "s ";
     
-    // If the count down is over, write some text 
-    if (timeLeft < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "We Are Live!";
-    }
-}, 1000);
+//     // If the count down is over, write some text 
+//     if (timeLeft < 0) {
+//     clearInterval(x);
+//     document.getElementById("demo").innerHTML = "We Are Live!";
+//     }
+// }, 1000);
 
 
 // function showInfo(e) {
