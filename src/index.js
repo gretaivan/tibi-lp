@@ -18,8 +18,7 @@ const subscribeForm = document.getElementById("subscribe");
 subscribeForm.addEventListener('click', subscribe);
 
 
-// const server = 'http:localhost:3000';
-// const request = require('./requests');
+
 
 // AOS.init();
 
