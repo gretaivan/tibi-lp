@@ -1,9 +1,14 @@
-import * as Requests from './requests';
-const server = 'http:localhost:3000';
+import { subscribeRequest } from'./requests';
+
+let sForm; 
+//let submitBtn;
 
 
-function subscribe () {
+function openRegForm () {
+
   modalInit();
+  ///submitBtn = sForm.getElementsByTagName('input')[4]
+  sForm.addEventListener('submit', e => reg(e))
   
   //const resData = request.post(server, Object.fromEntries(new FormData(e.target))); 
   
@@ -14,6 +19,7 @@ function modalInit (){
 
   const modal = document.getElementById("reg-modal");
   const exit = document.getElementsByClassName("close")[0];
+  sForm = document.getElementById('subscribe-form');
 
   modal.style.display = "block";
 
@@ -28,11 +34,16 @@ function modalInit (){
   }
 }
 
-function submitForm(){
-
+function reg(e){
+  e.preventDefault(); 
+  // console.log(e)
+  //equests.post(server, formData)
+  console.log(Object.fromEntries(new FormData(e.target)))
+  let res = subscribeRequest(Object.fromEntries(new FormData(e.target)));
+  console.log(res)
 }
 
 
 
-export default subscribe;
+export { openRegForm, reg };
 

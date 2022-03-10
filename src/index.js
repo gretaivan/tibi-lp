@@ -15,12 +15,10 @@ import './css/form.css';
 import './images/FLOCK.png';
 import './images/favicon.png';
 import './images/bring-back-the-sass.png';
-import subscribe from './register.js';
+import  { openRegForm } from './register.js';
 
 const subscribeForm = document.getElementById("subscribe"); 
-subscribeForm.addEventListener('click', subscribe);
-
-
+subscribeForm.addEventListener('click', openRegForm);
 
 
 // AOS.init();
