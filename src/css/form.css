@@ -31,8 +31,7 @@ input[name~=name], input[type="email"] {
   padding: 0 10px;
 }
 
-input[name~=name]:hover, input[type="email"]:hover, input[type="submit"]:hover, 
-input[type="checkbox"]:hover {
+input[name~=name]:hover, input[type="email"]:hover, input[type="checkbox"]:hover {
   border: 2px solid var(--highlight);
 }
 
@@ -90,22 +89,20 @@ label span{
   padding-left: 10px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   background-color: inherit;
   margin: 20px auto;
   color: var(--text-color);
   font-size: 1.3rem;
   text-transform: uppercase;
-  /*background-color: var(--highlight);
-  
-  border: 2px solid var(--highlight);
-  border-radius: 10px;
-  padding: 5px 10px;
-  letter-spacing: 1px;
-  font-weight: 100;
-  -webkit-text-fill-color: var(--highlight);
+  padding: 25px 15px;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: var(--text-color);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  background-color: var(--highlight);
-  opacity: 1; */
 } 
+
+input[type="submit"]:hover, input[type="submit"]:active {
+  padding: 25px 15px;
+  height: 77px;
+}
