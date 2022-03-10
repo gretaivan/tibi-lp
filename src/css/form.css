@@ -22,7 +22,7 @@ input {
   font-family: Neon;
 }
 
-input[type="text"], input[type="email"]{
+input[name~=name], input[type="email"] {
   display: block;
   height: 40px;
   min-height: 40px;
@@ -31,7 +31,7 @@ input[type="text"], input[type="email"]{
   padding: 0 10px;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, input[type="submit"]:hover, 
+input[name~=name]:hover, input[type="email"]:hover, input[type="submit"]:hover, 
 input[type="checkbox"]:hover {
   border: 2px solid var(--highlight);
 }
@@ -42,7 +42,7 @@ input::placeholder{
   font-size: 1.3rem;
 }
 
-input:focus, input[type="text"]:not(:placeholder-shown),input[type="email"]:not(:placeholder-shown){
+input:focus, input[name~=name]:not(:placeholder-shown),input[type="email"]:not(:placeholder-shown){
   background-color: var(--purple-dark);
 }
 
