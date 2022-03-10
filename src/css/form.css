@@ -48,7 +48,9 @@ input:focus, input[name~=name]:not(:placeholder-shown),input[type="email"]:not(:
 
 input[type="checkbox"] {
   appearance: none;
-  background-color: var(--purple-m) ; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--purple-m); 
   margin: 0;
   font: inherit;
   width: 25px;

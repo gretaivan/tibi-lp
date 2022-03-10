@@ -15,7 +15,7 @@
 
 .modal-container {
   /* flex-direction: column nowrap; */
-  background-color: rgb(0,0,0, 0.7);
+  background-color: rgb(0,0,0, 0.8);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -55,3 +55,4 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
