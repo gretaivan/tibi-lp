@@ -1,0 +1,108 @@
+form{
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form label {
+  display: none;
+}
+
+input {
+  margin-bottom: 10px;
+  background: var(--purple-m);
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  border-style: inset;
+  border-width: 1px;
+  border-color: (rgb(118, 118, 118), rgb(133, 133, 133));
+  border-radius: 0.5rem;
+  font-family: Neon;
+}
+
+input[type="text"], input[type="email"]{
+  display: block;
+  height: 40px;
+  font-size: 1.3rem;
+  color:white;
+  padding: 0 10px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="submit"]:hover, 
+input[type="checkbox"]:hover {
+  border: 2px solid var(--highlight);
+}
+
+input::placeholder{
+  color: black;
+  opacity: 1;
+  font-size: 1.3rem;
+}
+
+input:focus, input[type="text"]:not(:placeholder-shown),input[type="email"]:not(:placeholder-shown){
+  background-color: var(--purple-dark);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--purple-m) ; 
+  margin: 0;
+  font: inherit;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  /* margin-top: 15px; */
+  border-radius: 0.2rem;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(10% 35%, 0 50%, 55% 100%, 95% 12%, 85% 0%, 40% 59%);
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+label[for="tester"], label[for="policy"]{
+  display: flex;
+  align-items: center;
+  /* justify-content: stretch; */
+  width: 100%;
+  margin-top: 5px;
+  /* padding: 5px; */
+}
+
+label span{
+  padding-left: 10px;
+}
+
+input[type="submit"]{
+  background-color: inherit;
+  margin: 20px auto;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  /*background-color: var(--highlight);
+  
+  border: 2px solid var(--highlight);
+  border-radius: 10px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  -webkit-text-fill-color: var(--highlight);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  background-color: var(--highlight);
+  opacity: 1; */
+} 

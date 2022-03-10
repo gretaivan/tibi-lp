@@ -3,7 +3,10 @@ import _ from 'lodash';
 
 console.log(_.join(['Another', 'module', 'loaded!'], ' '));
 import './neon_80s/Neon.ttf';
+import './css/theme.css';
 import './css/style.css';
+import './css/modal.css';
+import './css/form.css';
 // import './css/header.css';
 // import './css/footer.css';
 // import './css/home.css';

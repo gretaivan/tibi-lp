@@ -1,0 +1,17 @@
+:root {
+  --content-fonts: Neon; /* 'Lora', serif; */
+  --text-color: white;
+  --text-size: 1.5rem;
+  --header-color: #BA5277;
+  --big-margin: 35px;
+  --header-fonts: 'Bebas Neue', cursive; /*36px 2.25 rem h1 2.9rem*/
+  
+  --highlight: #FE018A;
+  --partner-color: #0B654B;
+  --darkest-purple: #1B1030;
+  --lightest-purple: #9EA3F7;
+  --lightest-pink: #FFFBFC;
+  --secondary-background: #F8EEF1;  
+  --purple-dark: #503088;
+  --purple-m: rgb(110, 69, 180, 0.4);
+}
