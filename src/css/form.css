@@ -25,6 +25,7 @@ input {
 input[type="text"], input[type="email"]{
   display: block;
   height: 40px;
+  min-height: 40px;
   font-size: 1.3rem;
   color:white;
   padding: 0 10px;
