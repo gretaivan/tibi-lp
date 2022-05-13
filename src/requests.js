@@ -1,21 +1,22 @@
 import 'regenerator-runtime/runtime'
-const url = 'http:localhost:3000';
+const server = 'http://localhost:3000';
 
-async function subscribeRequest(data){ 
-  
- 
+async function subscribeRequest(data){  
   try{
-    console.log(data)
-  //   const options = {
-  //     method: 'POST',
-  //     mode: 'cors', 
-  //     headers: { 'Content-Type': 'application/json'},
-  //     body: JSON.stringify(data)
-  //   }
+    // console.log(data)
+    const options = {
+      method: 'POST',
+      mode: 'cors', 
+      headers: { 'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    }
+
+    const url = server + '/register';
       
-  //   const res = await fetch(url, options)
-  //   const resData = await res.json();
-  //   return resData;
+    const res = await fetch(url, options)
+    const resData = await res.json();
+    console.log(resData)
+    return resData;
 
    } catch(err) {
       console.log(err); 

@@ -9,12 +9,15 @@
     <meta name="description" content="A product for women's safety" />
      <!-- whatever is our main page -->
     <link rel="canonical" href="" />
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <style>
       @font-face {  
         font-family: Neon;
         src: URL('../fonts/Neon.ttf');
       }
-    </style>
+    </style> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/fa9041be32.js" crossorigin="anonymous"></script> -->
     <script defer type="text/javascript" src="./index.js"></script>
@@ -22,17 +25,36 @@
 
 <body>
     <header>
-      <img src="./images/FLOCK.png" id="logo-icon" style="height:100%;" />
-      <h1>JOIN THE FLOCK</h1>
-      <img src="./images/bring-back-the-sass.png" class="slogan">
+      <img class="nav-icon" src="./images/FLOCK.png" id="logo-icon"/>
+      <nav class="navbar">
+        <a href="/" class="current">app</a>
+        <a href="/about">about us</a>
+      </nav>
+      
+      
+   
+      
     </header>
 
     <main>  
-      
-      <p class="intro">safety should be <br>no question of gender.</p> 
-      <p class="intro">help to fix the status quo!</p>
+      <section>
+        <div class="content" >
+            
+            <img class="hero content" src="./images/home-page-hero.jpg" />
+            <img class="blur" src="./images/home-page-hero.jpg" />
+           
+            <!-- <div class="mask"></div> -->
+            <!-- <div class="hero"></div> -->
+       
+        </div>
+        
+        <img src="./images/bring-back-the-sass.png" class="slogan"/>
+        <p class="intro">safety should be <br>no question of gender.</p> 
+        <p class="intro">help to fix the status quo!</p>
 
-      <button class="intro h1" id="subscribe">RAISE YOUR VOICE</button>
+        <button class="intro h1" id="subscribe">RAISE YOUR VOICE</button>
+        
+      </section>
       
 
     <div id="reg-modal" class="modal">
@@ -41,7 +63,7 @@
         <div class="modal-content">
           <h2>become a part of the community</h2>
 
-          <form id="subscribe-form" autocomplete="off" method="post">
+          <form id="subscribe-form" autocomplete="off">
             <label for="name">Your name</label>
             <input type="text"  id ="name" name="name" placeholder="Name">
             <label for="email">Your email address</label>

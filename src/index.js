@@ -2,19 +2,22 @@
 import _ from 'lodash';
 
 console.log(_.join(['Another', 'module', 'loaded!'], ' '));
-import './neon_80s/Neon.ttf';
+// import './neon_80s/Neon.ttf';
 import './css/theme.css';
 import './css/style.css';
 import './css/modal.css';
 import './css/form.css';
-// import './css/header.css';
+import './css/header.css';
 // import './css/footer.css';
-// import './css/home.css';
+//home
+
+import './css/home.css';
 // import './images/yellowcircle.png';
 // import './images/community.png';
 import './images/FLOCK.png';
 import './images/favicon.png';
 import './images/bring-back-the-sass.png';
+import './images/home-page-hero.jpg'; 
 import  { openRegForm } from './register.js';
 
 const subscribeForm = document.getElementById("subscribe"); 

@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap'); */
 /* @import url('./header.css'); */
 /* @import url('./footer.css'); */
-* {
+*, body{
   box-sizing: border-box;
   margin: 0; 
   padding: 0;
@@ -23,6 +23,8 @@ body, h1 {
   font-family: Neon;
   background-color: black;
 }
+
+main {margin-top: var(--nav-height);}
 
 h1, .h1 {
   font-family: Neon;
