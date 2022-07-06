@@ -4,13 +4,14 @@
 /* @import url('./footer.css'); */
 *, body{
   box-sizing: border-box;
-  margin: 0; 
-  padding: 0;
+  /* margin: 0;  */
+  /* padding: 0;s */
 } 
  
 html {
   margin: 0; 
   padding: 0;
+  font-size: 8px;
 }
 
 header, main {
@@ -36,14 +37,31 @@ h1, .h1 {
   color: var(--text-color);
   align-self: left;
 }
-
-p {
-  font-size: calc(var(--text-size) / 1.3);
-  width: 100%;
+h2, .h2 {
+  font-size: 2.5rem;
+  font-family: var(--content-fonts);
+  color: var(--text-color);
 }
 
-p.intro {
+h3, .h3 {
+  font-size: 2rem;
+  font-family: var(--content-fonts);
+  color: var(--text-color);
+}
+
+p, .p {
+  font-size: var(--text-size);
+  width: 100%;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* p.intro {
   margin: 15px 10px; 
+} */
+
+.txt-highlight {
+  color: var(--highlight);
 }
 
 #logo-icon {
@@ -52,22 +70,22 @@ p.intro {
   margin-bottom: 20px;
 }
 
-.slogan {
+/* .slogan {
   width: 90%;
   max-width: 570px;
   margin: var(--big-margin) 0 ;
-}
+} */
 
-.intro {
+/* .intro {
   color: var(--text-color);
-}
+} */
 
 button, .btn {
   border: 2px solid #FEFEFE;
   border-radius: 15px;
   width: 337px;
-  padding: 25px 15px;
-  align-self: center;
+  padding: 15px 15px;
+  /* align-self: center; */
 }
 
 button.intro {

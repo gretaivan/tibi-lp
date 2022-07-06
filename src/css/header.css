@@ -13,6 +13,7 @@ header {
     order: 1;
     position: fixed;
     height: var(--nav-height);
+    font-family: var(--content-fonts);
     font-size:18px;
     display:flex;
     flex-flow: row nowrap;
