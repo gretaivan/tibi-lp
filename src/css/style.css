@@ -2,27 +2,31 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap'); */
 /* @import url('./header.css'); */
 /* @import url('./footer.css'); */
-*, body{
-  box-sizing: border-box;
-  /* margin: 0;  */
-  /* padding: 0;s */
-} 
- 
-html {
-  margin: 0; 
-  padding: 0;
-  font-size: 8px;
-}
 
+/* body{
+  
+  margin: 0;  
+ padding: 0;
+  
+}  */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 8px;
+} 
+
+body {margin: 0;}
 header, main {
   display: flex;
   flex-flow: column;
-  margin: 0 15px;
+  /* margin: 0 15px;  */
+
 }
 
 body, h1 {
   font-family: Neon;
-  background-color: black;
+  background-color: var(--background-primary);
 }
 
 main {margin-top: var(--nav-height);}
@@ -98,6 +102,10 @@ button:hover, button:active, .btn:active, .btn:hover {
   background-color: var(--highlight);
 }
 
+.circles {
+  width: 35%; 
+  position: absolute;
+} 
 
 
 @media screen and (min-width: 500px){ 
@@ -111,6 +119,7 @@ button:hover, button:active, .btn:active, .btn:hover {
     max-width: 570px;
     margin: 15px 0;
   }
+
   
 
   button.intro {

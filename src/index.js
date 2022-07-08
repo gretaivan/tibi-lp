@@ -16,7 +16,11 @@ import './css/home.css';
 import './images/FLOCK.png';
 import './images/favicon.png';
 import './images/bring-back-the-sass.png';
-import './images/home-page-hero.jpg'; 
+// import './images/home-page-hero.jpg'; 
+import './images/hero_image_mobile.png';
+import './images/grey-circles.png';
+import './images/iphone-mockups.png';
+import './images/orange-circles.png';
 import  { openRegForm } from './register.js';
 
 const subscribeForm = document.getElementById("subscribe"); 
