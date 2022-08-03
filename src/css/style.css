@@ -129,6 +129,12 @@ button:hover, button:active, .btn:active, .btn:hover {
 
 }
 
+@media screen and (min-width: 850px){ 
+  .circles {
+    width: 15%; 
+  } 
+}
+
 /*
 body {
   margin: 0;

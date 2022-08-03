@@ -48,36 +48,37 @@ input:focus, input[name~=name]:not(:placeholder-shown),input[type="email"]:not(:
 }
 
 
+
+
 input[type="checkbox"] {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #80644E;
   margin: 0;
-  font: inherit;
+  font: 0.01px;
   width: 20px;
   height: 20px;
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
   border-radius: 0.2rem;
-  
 }
 
 input[type="checkbox"]::before {
-  content: "";
+  content: " ";
   width: 24px;
   height: 24px;
-  clip-path: polygon(10% 35%, 0 50%, 55% 100%, 95% 12%, 85% 0%, 40% 59%);
+  clip-path: polygon(10% 35%, 10% 50%, 40% 85%, 95% 15%, 90% 0%, 40% 55%);
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em white;
-
+  z-index: 10;
 }
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
-  z-index: 10;
+
 }
 
 label[for="tester"], label[for="policy"]{

@@ -37,7 +37,12 @@
     </header>
 
     <main>  
-      <img class="full-width-img blur" src="./images/hero_image_mobile.png" />
+      <picture>
+        <!-- add the picture for the desktop from 765px -->
+        <img class="full-width-img blur" src="./images/hero_image_mobile.png" />
+        
+      </picture>
+      
       <section class="intro">
         <img src="./images/bring-back-the-sass.png" class="slogan"/>
         <h3>public safety should be<br>no question of gender</h3> 
@@ -62,7 +67,7 @@
             <label for="email">Your email address</label>
             <input class="form-control" type="email" id="email" name="email" placeholder="Email">
             <label for="tester">
-              <input type="checkbox" id="tester" name="tester">
+              <input type="checkbox"  checked="checked" id="tester" name="tester">
                 <span class="p">I want an early access to the app and contribute with my feedback</span>
               </label>
               <label for="policy">

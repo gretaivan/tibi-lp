@@ -111,10 +111,38 @@ button.intro {
     justify-self: flex-start;
 }
 
-/* MOBILE */
-@media screen and (max-width: 540px){
+/* tablets */
+@media screen and (min-width: 765px){
 
 }
+
+/* one column split */
+@media screen and (min-width: 850px){
+    .intro-ca {
+        width: 100%; 
+        flex-direction: row-reverse;  /* reverse the row*/
+    }
+    
+    .horizontal-axis {
+        width: 49%;
+    }
+
+    .intro-ca div img:first-child {
+        /* align-self: center; */
+        margin-left: -18%;
+        margin-top: -10%;
+    }
+    
+    .intro-ca div img:nth-child(3) {
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    .wrapper {
+        width: 45%;
+    }
+}
+
 
 /* .arrows {
     width: 40px;
