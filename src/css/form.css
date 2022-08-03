@@ -78,7 +78,10 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
 
+span.p {
+  font-size: 1.1rem;
 }
 
 label[for="tester"], label[for="policy"]{

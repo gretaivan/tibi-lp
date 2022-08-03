@@ -6,15 +6,11 @@ main {
 }
 
 section {
-    padding-left: 24px;
+    padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
-    /* width: 100vw; */
     height: 90vh;
-    /* border: red solid 1px; */
-    
 }  
-
 
 .full-width-img{
     margin-top: -80px;
@@ -22,7 +18,6 @@ section {
     flex-flow: column nowrap;
     align-self: flex-end; */
     position: absolute;
-    /* margin:-30px 0; */
     width: 100%;
     height: 100%; 
     z-index: -1;
@@ -72,37 +67,26 @@ button.intro {
     
 }
 
-.intro-ca .wrapper {
+.wrapper {
+    display: block;
     width: 55%;
-
 }
 
-/* .hero {
-    margin-top: -65px;
-    position: absolute;
-    align-self: flex-end;
-    z-index: -5;
-    width: 60%;
-    height: 65%;
-   
-} */
-/* 
-.gradient-cover:after {
-    align-self: flex-end;
-    z-index: -4;
-    position: absolute;
-    content:"";
-    margin: -80px 0 0 30%;
-    height:90%;
-    width:75%;
-    top:0;
-    left:0;
-    background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.203) 15%, transparent 20%), 
-                linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.377) 2%, transparent 20%),
-                linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0) 10%, transparent 30%);
-} */
+.info-section {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content:space-around;
+    align-content: flex-start;
+    margin:50px 0 100px 0;
+}
 
+.info-section div { padding-bottom: 10px;}
+.info-section h4 {
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
 
+/* .intro-ca { padding-bottom: 100px;} */
 
 .ca {
     color: var(--highlight);
@@ -110,6 +94,42 @@ button.intro {
     width: 200px;
     justify-self: flex-start;
 }
+
+.problem-container{
+    margin-top: -100px; 
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+}
+
+.prbl-stats {
+    /* height:40%; */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.card {
+    width: auto;
+    height: auto; 
+    text-align: center;
+    flex: 0 1 155px;
+ }
+
+ .card h2 {
+    color: var(--highlight);
+ }
+
+ .cntr-qt {
+    text-align: center;
+ }
+
+/* .prbl-stats > * {
+    flex: 2 1 180px;
+} */
+
+
 
 /* tablets */
 @media screen and (min-width: 765px){
@@ -142,75 +162,6 @@ button.intro {
         width: 45%;
     }
 }
-
-
-/* .arrows {
-    width: 40px;
-    height: 72px;
-    position: absolute;
-    right: 60px;
-    bottom: 20px;
-}
-
-.arrows path {
-    stroke: var(--lightest-pink);
-    fill: transparent;
-    stroke-width: 3px;  
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite; 
-}
-
-@keyframes arrow
-{
-    0% {opacity:0}
-    40% {opacity:0} 
-    80% {opacity:1}
-    100% {opacity:0}
-}
-
-@-webkit-keyframes arrow 
-{
-    0% {opacity:0}
-    40% {opacity:0}
-    80% {opacity:1}
-    100% {opacity:0}
-}
-
-.arrows path.a1 {
-animation-delay:-1.5s;
--webkit-animation-delay:-1.5s; 
-}
-
-.arrows path.a2 {
-animation-delay:-1s;
--webkit-animation-delay:-1s; 
-}
-
-.arrows path.a3 { 
-animation-delay:-0.5s;
--webkit-animation-delay:-0.5s;
-}
-
-.arrows path.a4 { 
-    animation-delay:0s;
-    -webkit-animation-delay:0s; 
-} */
-
-/* @media screen and (max-width: 900px) {
-    .arrows {
-        position: absolute;
-        left: 50%;
-        margin-left: 0;
-        bottom: 15px;
-    }
-
-    .arrows path {
-            stroke: var(--dark);
-            fill: transparent;
-            animation: arrow 2s infinite;
-            -webkit-animation: arrow 2s infinite; 
-    }
-} */
 
 
 
@@ -295,21 +246,7 @@ animation-delay:-0.5s;
    
 /*     
 
-.problem-container{
-    display: flex;
-    flex-flow: no-wrap;
-    background-color: var(--dark);
-    column-gap: 4%;
-    justify-content: center;
-    background-color: var(--darkest-purple);
-    padding: 100px 0; 
-}
 
-.card{
-   width: 21%;
-   align-items: baseline;
-   text-align: center;
-}
 
 .card img {
  margin-bottom: 10px;

@@ -48,16 +48,30 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: var(--content-fonts);
   color: var(--text-color);
 }
+
+h4, .h4 {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 14px;
+  letter-spacing: 1.17727px;
+}
+
+section > h3 {
+  padding-bottom: 30px;
+}
+
 
 p, .p {
   font-size: var(--text-size);
   width: 100%;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 /* p.intro {
@@ -106,6 +120,11 @@ button:hover, button:active, .btn:active, .btn:hover {
   width: 35%; 
   position: absolute;
 } 
+
+.left-border {
+  padding: 0 10px 0 10px;
+  border-left: 2px solid var(--highlight);
+}
 
 
 @media screen and (min-width: 500px){ 
