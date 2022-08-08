@@ -103,7 +103,7 @@ button.intro {
     justify-content: stretch;
 }
 
-.prbl-stats {
+.x-container {
     /* height:40%; */
     display: flex;
     flex-flow: row wrap;
@@ -123,8 +123,62 @@ button.intro {
 
  .cntr-qt {
     text-align: center;
+    margin: 100px 0; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
  }
 
+ .cntr-qt img {
+    overflow: hidden;
+ }
+
+ .cntr-qt img:first-of-type {
+    margin: -70px 120px;
+ }
+
+ .cntr-qt img:nth-last-of-type(1) {
+    margin: 60px 10px;
+    filter: linear-gradient(to right, #f1b1b100 , #82e6e8);
+ }
+
+ .cntr-qt h5{
+    align-self: flex-end;
+    margin: 0 0 0 10px
+ }
+
+ .cntr-qt h5 span{
+    text-align: center;
+}
+
+.cntr-qt h5 span:after, 
+.cntr-qt h5 span:before {
+    background-color: red;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    vertical-align: middle;
+    width: 15px;
+    margin: 5px -5px  0;
+    transform: rotate(-45deg);
+}
+
+.values {
+    padding: 100px 0;
+    margin-bottom: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.x-card img {
+    height: 50px;
+}
+
+.sponsors {
+    padding-top: 100px;
+}
+ 
 /* .prbl-stats > * {
     flex: 2 1 180px;
 } */

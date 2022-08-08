@@ -7,6 +7,7 @@ import './css/theme.css';
 import './css/style.css';
 import './css/form.css';
 import './css/header.css';
+import './css/footer.css';
 // import './css/footer.css';
 //home
 
@@ -21,6 +22,9 @@ import './images/hero_image_mobile.png';
 import './images/grey-circles.png';
 import './images/iphone-mockups.png';
 import './images/orange-circles.png';
+import './images/inequality.png';
+import './images/community.png';
+import './images/global-network.png';
 import  { openRegForm } from './register.js';
 
 const subscribeForm = document.getElementById("subscribe"); 

@@ -62,6 +62,11 @@ h4, .h4 {
   letter-spacing: 1.17727px;
 }
 
+h5{
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
 section > h3 {
   padding-bottom: 30px;
 }
@@ -125,6 +130,13 @@ button:hover, button:active, .btn:active, .btn:hover {
   padding: 0 10px 0 10px;
   border-left: 2px solid var(--highlight);
 }
+
+.x-card p{
+  padding: 0 0 30px 0;
+  width: 327px;
+  text-align: justify;
+  letter-spacing: 0.7px;
+ }
 
 
 @media screen and (min-width: 500px){ 
