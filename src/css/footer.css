@@ -30,6 +30,8 @@ footer a, footer li{
 
 footer a {
     text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--content-fonts);
 }
 
 #social-media{

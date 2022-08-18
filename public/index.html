@@ -27,7 +27,7 @@
     <header>
       <img class="nav-icon" src="./images/FLOCK.png" id="logo-icon"/>
       <nav class="navbar">
-        <a href="/" class="current">app</a>
+        <a href="#womenSafetyApp" class="current">app</a>
         <a href="/about">about us</a>
       </nav>
       
@@ -47,10 +47,11 @@
         <img src="./images/bring-back-the-sass.png" class="slogan"/>
         <h3>public safety should be<br>no question of gender</h3> 
 
-        <button class="intro h3 ca" id="subscribe">RAISE YOUR VOICE</button>
-        
+        <button class="intro h3 ca" id="subscribe" onclick="window.location.href='#form-focus'">RAISE YOUR VOICE</button>
       </section>
-      <section class="intro-ca">
+
+      <section id="womenSafetyApp"  class="intro-ca" style="padding-top:71px;">
+        <h3>the <span class="txt-highlight">app</span></h3>
         <div class="horizontal-axis">
           <img class="circles" src="./images/grey-circles.png" />
           <img id="mockups" src="./images/iphone-mockups.png" />
@@ -73,16 +74,16 @@
         </div>
       </section>
 
-      <section class="form-section">
+      <section class="form-section" id="form-section">
         <div class="wrapper">
-          <h3 style="padding-bottom: 30px;">a <span class="txt-highlight">safer</span> way home</h3>
+          <h3 style="padding: 120px 0 30px 0;" id="form-focus">a <span class="txt-highlight">safer</span> way home</h3>
           <h2>an app tailored<br> to our <span class="txt-highlight">community</span><br>and your <span class="txt-highlight"> needs</span></h2>
           <p>the app that connects flinta to find a matching
             partner for the safe travel home. Sign up!</p>
         </div>
 
         <div class="wrapper">
-          <form id="subscribe-form" autocomplete="off">
+          <form id="subscribe-form" autocomplete="off" >
             <label for="email">Your email address</label>
             <input class="form-control" type="email" id="email" name="email" placeholder="Email">
             <label for="tester">
@@ -93,7 +94,7 @@
                 <input type="checkbox" id="policy" name="policy">
                 <span class="p">Please view the Data Protection and Privacy Policy</span>
               </label>
-            <input type="submit" value="gimme da data" class="btn h3 ca">
+            <input type="submit" value="gimme da data" class="btn h3 ca" >
         </form>
       </div>
     </section>
@@ -210,7 +211,7 @@
   <footer>
     <ul>
       <li>
-        <a href="#">contact us</a>
+        <a href="mailto:info@flockoff.app">contact us</a>
       </li>
       <li>
         <a href="#">sponsor us</a>

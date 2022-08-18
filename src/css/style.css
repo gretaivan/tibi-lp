@@ -42,13 +42,13 @@ h1, .h1 {
   align-self: left;
 }
 h2, .h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-family: var(--content-fonts);
   color: var(--text-color);
 }
 
 h3, .h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: var(--content-fonts);
   color: var(--text-color);
 }
@@ -57,7 +57,7 @@ h4, .h4 {
   color: var(--text-color);
   font-style: normal;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 14px;
   letter-spacing: 1.17727px;
 }
@@ -76,7 +76,7 @@ p, .p {
   font-size: var(--text-size);
   width: 100%;
   color: var(--text-color);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /* p.intro {
@@ -103,7 +103,7 @@ p, .p {
   color: var(--text-color);
 } */
 
-button, .btn {
+button, .btn, button:visited, .btn:visited {
   border: 2px solid #FEFEFE;
   border-radius: 15px;
   width: 337px;
@@ -119,6 +119,7 @@ button.intro {
 
 button:hover, button:active, .btn:active, .btn:hover {
   background-color: var(--highlight);
+  color: var(--text-color);
 }
 
 .circles {

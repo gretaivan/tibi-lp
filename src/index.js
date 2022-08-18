@@ -25,11 +25,19 @@ import './images/orange-circles.png';
 import './images/inequality.png';
 import './images/community.png';
 import './images/global-network.png';
-import  { openRegForm } from './register.js';
+//import  { openRegForm } from './register.js';
 
-const subscribeForm = document.getElementById("subscribe"); 
-subscribeForm.addEventListener('click', openRegForm);
+const subscribeForm = document.getElementById("subscribe-form"); 
+subscribeForm.addEventListener('submit', reg);
 
+
+import { subscribeRequest } from'./requests';
+
+function reg(e){
+  e.preventDefault();
+  let res = subscribeRequest(Object.fromEntries(new FormData(e.target)));
+  console.log(res)
+}
 
 // AOS.init();
 

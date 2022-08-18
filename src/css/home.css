@@ -37,6 +37,9 @@ section {
 
 .intro .slogan{
     margin-top: 160px;
+    max-width: 370px;
+    padding-bottom: 10px;
+    
 }
 button.intro {
     margin: 8px 0;
@@ -51,13 +54,13 @@ button.intro {
 
 .intro-ca div img:first-child {
     /* align-self: center; */
-    margin-left: -35%;
-    margin-top: -10%;
+    margin-left: -65%;
+    margin-top: -15%;
 }
 
 .intro-ca div img:nth-child(3) {
-    margin-left: 29%;
-    margin-top: 10%;
+    margin-left: 60%;
+    margin-top: 22.5%;
 }
 
 #mockups {
@@ -127,6 +130,7 @@ button.intro {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 50px 0 0;
  }
 
  .cntr-qt img {
@@ -134,12 +138,14 @@ button.intro {
  }
 
  .cntr-qt img:first-of-type {
-    margin: -70px 120px;
+    margin: -70px -60% 0 0;
+    z-index: -1;
  }
 
  .cntr-qt img:nth-last-of-type(1) {
-    margin: 60px 10px;
+    margin: 70px 10px;
     filter: linear-gradient(to right, #f1b1b100 , #82e6e8);
+    z-index: -1;
  }
 
  .cntr-qt h5{
